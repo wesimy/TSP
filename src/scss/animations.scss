@@ -1,0 +1,33 @@
+@import 'base/index';
+
+@include keyframes(slide-down) {
+  0% { opacity: 0;  transform: translateY(-25%);}
+  100% { opacity: 1; transform: translateY(0%);}
+}
+@include keyframes(slide-up) {
+  0% { opacity: 0; transform: translateY(25%);}    
+  100% { opacity: 1;  transform: translateY(0%);}
+}
+
+@include keyframes(slide-right) {
+  0% { opacity: 0;  transform: translateX(-25%);}
+  100% { opacity: 1; transform: translateX(0%);}
+}
+@include keyframes(slide-left) {
+  0% { opacity: 0; transform: translateX(25%);}    
+  100% { opacity: 1;  transform: translateX(0%);}
+}
+@include keyframes(fade) {
+  0% { opacity: 0; }    
+  100% { opacity: 1}
+}
+
+@include keyframes(fade-down) {
+  0% { opacity: 1;  transform: translateY(0%);}
+  100% { opacity: 0; transform: translateY(25%);}
+}
+@include keyframes(fade-up) {
+  0% { opacity: 1; transform: translateY(0%);}    
+  100% { opacity: 0;  transform: translateY(-25%);}
+}
+

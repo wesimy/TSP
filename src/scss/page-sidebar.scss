@@ -1,0 +1,195 @@
+@import 'base/index';
+.pg-sidebar {
+    @include transition(all 800ms $cubic); //@include transition(right 900ms $cubic);
+    width: calc(100vw + 100px);
+    position: absolute;
+    left: 100%;
+    z-index: 20;
+    height: 100%;
+    background: darken($primary, 3%);
+    color: $white; //@include transition(all 1000ms cubic-bezier(0.68, -0.45, 0.265, 1.55));
+    .container-fluid {
+        min-height: 100%;
+    }
+    a {
+        color: $white;
+    }
+    .link-close {
+        svg {
+            fill: $white;
+            max-width: 25px;
+        }
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+    .nav-on & {
+        left: 0;
+    }
+    .sidebar-hd {
+        margin: 0 -15px;
+        padding: 120px 20px 20px;
+        background: $primary;
+        .sidebar-search {
+            max-width: 70%;
+            input[type="text"] {
+                @include transition(all 300ms ease);
+                width: 100%;
+                border: none;
+                border-radius: 0;
+                border-bottom: 1px solid darken($primary, 3%);
+                box-shadow: none;
+                background: none;
+                @include font-size($xl-font);
+                padding: 5px 5px 5px 25px;
+                color: $white;
+                outline: none;
+                &:focus,
+                &:active {
+                    border-bottom: 1px solid $white;
+                }
+            }
+            &:before {
+                @include ifont();
+                @include font-size($xl-font);
+                content: "\e930";
+                position: absolute;
+                left: 10px;
+                top: 10px;
+            }
+        }
+    }
+    .sidebar-bd {
+        margin: 0 -15px; //padding: 45px 0;
+        .sidebar-primary {
+            background: $primary;
+            padding: 20px;
+            dl {
+                margin: 0;
+                padding: 10px 0;
+                dt {
+                    display: block;
+                    @include font-size($xl-font);
+                    font-weight: 800;
+                    a {
+                        font-weight: bold;
+                        display: block;
+                        padding: 8px 0;
+                        text-transform: uppercase;
+                        img,
+                        svg {
+                            width: 30px;
+                            fill: $white;
+                            stroke: $white;
+                            margin-right: 10px;
+                            vertical-align: middle;
+                        }
+                        &:hover {}
+                    }
+                }
+                dd {
+                    margin: 0;
+                    ul {
+                        margin: 10px 0;
+                        padding: 0;
+                        list-style: none;
+                        li {
+                            @include font-size($lg-font);
+                            font-weight: bold;
+                            a {
+                                color: lighten($black, 5%);
+                                display: block;
+                                padding: 5px 45px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .sidebar-secondary {
+            margin: 0 -15px;
+            padding: 20px;
+            dl {
+                margin: 0;
+                padding: 10px 55px;
+                dt {
+                    display: block;
+                    @include font-size($sm-font);
+                    font-weight: 800;
+                    a {
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        img,
+                        svg {
+                            width: 30px;
+                            fill: $white;
+                            stroke: $white;
+                            margin-right: 10px;
+                            vertical-align: middle;
+                        }
+                        i {
+                            @include font-size($lg-font);
+                            @include transition(all 300ms ease);
+                            display: inline-block;
+                            padding: 0.5em 0.8em;
+                            padding-left: 0;
+                            opacity: 0.5;
+                        }
+                        &:hover {
+                            i {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+                dd {
+                    margin: 0;
+                    ul {
+                        margin: 10px 0;
+                        padding: 0;
+                        list-style: none;
+                        li {
+                            @include font-size($sm-font);
+                            font-weight: normal;
+                            a {
+                                color: $white;
+                                display: block; //padding: 5px 40px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: map-get($breakpoints, sm)) {
+        width: 400px;
+        .sidebar-hd {
+            //padding-top: 20px;
+            .sidebar-search {
+                input[type="text"] {
+                    //      width: 250px;
+                }
+            }
+        }
+        .nav-on & {
+            left: calc(100% - 400px);
+        }
+    }
+    @media (min-width: map-get($breakpoints, md)) {}
+    @media (min-width: map-get($breakpoints, lg)) {}
+    @media (min-width: map-get($breakpoints, xl)) {}
+    @media (min-width: map-get($breakpoints, xxl)) {}
+}
+
+.nav-on{
+    overflow: hidden;
+    .nav-overlay{
+    background: rgba($black,0.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 18;
+    width: 100%;
+    height: 100%;
+}
+}

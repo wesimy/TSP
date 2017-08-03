@@ -60,12 +60,16 @@ $xs-font: (
   
 );
 
+
 /////////////////
 // Colors
 ////////////////
-$skyblue: #0082c9;
-$seablue:#003ca6;
-$darkblue: #002d73;
-$silver: #efefef;
-$black: #333333;
-$white: #fff;
+$primary: #162732;  // primary
+$secondary:#8dc63f;    // secondary
+$tertiary:#162732;    // tertiary
+$link: #8dc63f;  // link
+$silver: #fafafa; // silver
+$black: #333333;  //  text
+$white: #fff;   // white
+
+$cubic : cubic-bezier(.76,0,.24,1);

@@ -1,0 +1,44 @@
+@import 'base/index';
+
+.pg-header{
+    position: fixed;
+    top: 0px;
+    z-index: 5;
+    width: 100%;
+    >.container {
+        >.row{
+            background: $primary;
+    padding:  15px;
+        }
+    }
+    .header-brand{
+        img{
+            width: 90px;
+            float: right;
+        }
+    }
+    .header-title{
+        font-family: 'Bembo','Times New Roman', Times, serif;
+        text-align: center;
+        h1{color: $secondary;
+        @include font-size($xxl-font);
+        margin: 0;
+        }
+        p{
+            color: $white;
+            margin: 0;
+        }
+    }
+    .header-menu{
+        color:$white;
+    }
+
+    @media (min-width: map-get($breakpoints, md)) {
+        top: 30px;
+        .header-brand{
+        img{
+            width: 120px;
+        }
+    }
+    }
+}

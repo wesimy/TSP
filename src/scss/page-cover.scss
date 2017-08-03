@@ -1,0 +1,155 @@
+@import 'base/index';
+.pg-cover {
+    background: $white;
+    position: relative;
+    height: 100%;
+    .swiper-container {
+        height: 100%;
+        .swiper-wrapper {
+            height: 100%;
+            .swiper-slide {
+                height: 100%;
+                
+                .slide-img {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-size: cover;
+                    background-position: center center;
+                    
+                }
+                .slide-content {
+                    height: 100%;
+                    >.container {
+                        height: 100%;
+                        &:before {
+                        content: '';
+                        height: 100%;
+                        width: 100%;
+                        
+                        position: absolute;
+                        top: 0px;
+                        left: 0px;
+                        @include linear-gradient(135deg, rgba($primary, 0.7) 0%, transparent 40%);    
+                    }
+                    
+                        .row {
+                            height: 100%;
+                            h1 {
+                            
+                                
+                            }
+                            .btn {
+                                opacity: 0;
+                                @include animation('fade-down 0.5s normal 0s backwards ease');
+
+                            }
+                            .links {
+                                
+                                label {
+                                    
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+                &.swiper-slide-active {
+                    .slide-content {
+                        .container-fluid,
+                        .container {
+                            .row {
+                                label {
+                                    @include animation('slide-down 0.75s  normal 0.75s backwards ease');
+                                    opacity: 1;
+                                }
+                                h2 {
+                                    @include animation('fade 1.5s normal 0.5s backwards ease');
+                                }
+                                p {
+                                    @include animation('slide-up 1s  normal 1s backwards ease');
+                                    opacity: 1;
+                                }
+                                .btn {
+                                    @include animation('slide-up 0.75s  normal 0.75s backwards ease');
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .swiper-arrows {
+        position: absolute;
+        bottom: 0px;
+        right: 0;
+        width: 100%;
+        padding: 0;
+        height: 60px;
+        z-index: 11;
+        .swiper-button-next,
+        .swiper-button-prev {
+            //position: relative;
+            //background: none;
+            left: auto;
+            right: auto;
+            width: auto;
+            height: auto;
+            margin: 10px 5px;
+            @include font-size($xxxl-font);
+            display: inline-block;
+            &:before {
+                @include ifont;
+                display: block;
+                color: $primary;
+                border: auto;
+            }
+        }
+        .swiper-button-next {
+            right: 0;
+            // &:before {
+            //     -ltr-content: "\e92e";
+            //     -rtl-content: "\e92d";
+            // }
+        }
+        .swiper-button-prev {
+            right: 40px;
+            // &:before {
+            //     -rtl-content: "\e92e";
+            //     -ltr-content: "\e92d";
+            // }
+        }
+    }
+    
+    @media (min-width: map-get($breakpoints, md)) {
+       // height: 370px;
+       
+
+
+
+        .swiper-arrows {
+            height: 80px;
+            .swiper-button-prev,
+            .swiper-button-next{
+                &:before{
+                    color:$white;
+                   
+                }
+            }
+        .swiper-button-prev {
+            right: 50px;
+            
+        }
+    }
+
+    }
+    @media (min-width: map-get($breakpoints, lg)) {
+      //  height: 500px;
+   
+    }
+   
+}
