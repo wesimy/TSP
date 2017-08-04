@@ -21158,10 +21158,10 @@ var map = {
 	"./animations.scss": 12,
 	"./fonts.scss": 13,
 	"./layout.scss": 14,
+	"./our-service.scss": 52,
 	"./page-cover.scss": 15,
 	"./page-header.scss": 16,
-	"./page-sidebar.scss": 17,
-	"./tiles.scss": 18
+	"./page-sidebar.scss": 17
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -21216,12 +21216,7 @@ webpackContext.id = 11;
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 18 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
+/* 18 */,
 /* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21258,6 +21253,7 @@ var app = (function () {
     // Page Initalization handler : exposed to app.init();
     //-----------------------------------------------------------------
     var init = function () {
+        
             _toggleClassHandler();
             _svgHandler();
             _navHandler();
@@ -21322,6 +21318,7 @@ var app = (function () {
         // Helper Function: Add CSS Class to page-hd element on scroll
         //-----------------------------------------------------------------
         _toggleClassHandler = function () {
+            
             $("a[data-toggle-class]").on('click', function (e) {
                 e.preventDefault();
                 $($(this).attr('href')).toggleClass($(this).data('toggle-class'));
@@ -21563,6 +21560,43 @@ var app = (function () {
      app.init();
      
  });
+
+/***/ }),
+/* 21 */,
+/* 22 */,
+/* 23 */,
+/* 24 */,
+/* 25 */,
+/* 26 */,
+/* 27 */,
+/* 28 */,
+/* 29 */,
+/* 30 */,
+/* 31 */,
+/* 32 */,
+/* 33 */,
+/* 34 */,
+/* 35 */,
+/* 36 */,
+/* 37 */,
+/* 38 */,
+/* 39 */,
+/* 40 */,
+/* 41 */,
+/* 42 */,
+/* 43 */,
+/* 44 */,
+/* 45 */,
+/* 46 */,
+/* 47 */,
+/* 48 */,
+/* 49 */,
+/* 50 */,
+/* 51 */,
+/* 52 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);

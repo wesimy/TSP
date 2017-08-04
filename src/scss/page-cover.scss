@@ -38,7 +38,7 @@
                         .row {
                             height: 100%;
                             h1 {
-                            
+                                @include font-size($xxxl-font);
                                 
                             }
                             .btn {

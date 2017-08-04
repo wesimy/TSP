@@ -8,6 +8,7 @@ var app = (function () {
     // Page Initalization handler : exposed to app.init();
     //-----------------------------------------------------------------
     var init = function () {
+        
             _toggleClassHandler();
             _svgHandler();
             _navHandler();
@@ -72,6 +73,7 @@ var app = (function () {
         // Helper Function: Add CSS Class to page-hd element on scroll
         //-----------------------------------------------------------------
         _toggleClassHandler = function () {
+            
             $("a[data-toggle-class]").on('click', function (e) {
                 e.preventDefault();
                 $($(this).attr('href')).toggleClass($(this).data('toggle-class'));

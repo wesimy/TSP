@@ -15,13 +15,14 @@ body {
     height: 100%;
     font-family: 'Sans Pro', sans-serif;
     //background: $white;
-    @include font-size($md-font);
-    
+    @include font-size($sm-font);
+    color: $black;   
 }
 
 .canv{
     position: relative;
     height: 100%;
+    overflow-x: hidden;
 }
 
 //////////////
@@ -44,6 +45,7 @@ h4
 // Scroll Top Button
 ------------------------*/
 a.scroll-top {
+    
     line-height: 0;
     z-index: 20;
     opacity: 0.9;

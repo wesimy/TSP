@@ -10390,20 +10390,22 @@ body {
   width: 100%;
   height: 100%;
   font-family: 'Sans Pro', sans-serif;
-  font-size: 14px; }
+  font-size: 12px;
+  color: #333333; }
   @media screen and (min-width: 0) {
     body {
-      font-size: 14px; } }
+      font-size: 12px; } }
   @media screen and (min-width: 768px) {
     body {
-      font-size: 16px; } }
+      font-size: 14px; } }
   @media screen and (min-width: 992px) {
     body {
-      font-size: 16px; } }
+      font-size: 14px; } }
 
 .canv {
   position: relative;
-  height: 100%; }
+  height: 100%;
+  overflow-x: hidden; }
 
 /*----------------------
 // Scroll Top Button
@@ -10437,6 +10439,12 @@ a.scroll-top {
     bottom: 40px; }
   a.scroll-top:hover {
     opacity: 1; }
+.section-our-service {
+  background: red;
+  padding-top: 200px; }
+  .section-our-service h2 {
+    font-weight: 200;
+    text-transform: uppercase; }
 .pg-cover {
   background: #fff;
   position: relative;
@@ -10471,6 +10479,17 @@ a.scroll-top {
               background: linear-gradient(135deg, rgba(22, 39, 50, 0.7) 0%, transparent 40%); }
             .pg-cover .swiper-container .swiper-wrapper .swiper-slide .slide-content > .container .row {
               height: 100%; }
+              .pg-cover .swiper-container .swiper-wrapper .swiper-slide .slide-content > .container .row h1 {
+                font-size: 34px; }
+                @media screen and (min-width: 0) {
+                  .pg-cover .swiper-container .swiper-wrapper .swiper-slide .slide-content > .container .row h1 {
+                    font-size: 34px; } }
+                @media screen and (min-width: 768px) {
+                  .pg-cover .swiper-container .swiper-wrapper .swiper-slide .slide-content > .container .row h1 {
+                    font-size: 40px; } }
+                @media screen and (min-width: 992px) {
+                  .pg-cover .swiper-container .swiper-wrapper .swiper-slide .slide-content > .container .row h1 {
+                    font-size: 40px; } }
               .pg-cover .swiper-container .swiper-wrapper .swiper-slide .slide-content > .container .row .btn {
                 opacity: 0;
                 -webkit-animation: fade-down 0.5s normal 0s backwards ease;
