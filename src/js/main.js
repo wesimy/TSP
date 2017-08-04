@@ -73,7 +73,7 @@ var app = (function () {
         // Helper Function: Add CSS Class to page-hd element on scroll
         //-----------------------------------------------------------------
         _toggleClassHandler = function () {
-            
+            console.log('tog');
             $("a[data-toggle-class]").on('click', function (e) {
                 e.preventDefault();
                 $($(this).attr('href')).toggleClass($(this).data('toggle-class'));

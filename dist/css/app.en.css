@@ -10474,9 +10474,9 @@ a.scroll-top {
               position: absolute;
               top: 0px;
               left: 0px;
-              background: rgba(22, 39, 50, 0.7);
-              background: -webkit-linear-gradient(-45deg, rgba(22, 39, 50, 0.7) 0%, transparent 40%);
-              background: linear-gradient(135deg, rgba(22, 39, 50, 0.7) 0%, transparent 40%); }
+              background: rgba(22, 39, 50, 0.5);
+              background: -webkit-linear-gradient(-45deg, rgba(22, 39, 50, 0.5) 0%, rgba(22, 39, 50, 0.5) 20%, transparent 60%);
+              background: linear-gradient(135deg, rgba(22, 39, 50, 0.5) 0%, rgba(22, 39, 50, 0.5) 20%, transparent 60%); }
             .pg-cover .swiper-container .swiper-wrapper .swiper-slide .slide-content > .container .row {
               height: 100%; }
               .pg-cover .swiper-container .swiper-wrapper .swiper-slide .slide-content > .container .row h1 {
@@ -10576,6 +10576,10 @@ a.scroll-top {
       right: 0; }
     .pg-cover .swiper-arrows .swiper-button-prev {
       right: 40px; }
+  @media (min-width: 576px) {
+    .pg-cover .swiper-container .swiper-wrapper .swiper-slide .slide-content > .container:before {
+      top: 30px;
+      left: 15px; } }
   @media (min-width: 768px) {
     .pg-cover .swiper-arrows {
       height: 80px; }
