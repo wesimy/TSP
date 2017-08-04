@@ -9,12 +9,13 @@
         }
 
         .intro-background {
+            margin-top: -150px;
             background: url(../../dist/img/home/marhaba.png) top right no-repeat;
-            background-size: coover;
-            height: 400px;
+            height: 480px;
 
             @media (min-width: map-get($breakpoints, md)) {
                 height: auto;
+                margin-top: -50px;
             }
         }
 

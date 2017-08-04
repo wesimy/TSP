@@ -28,11 +28,10 @@
                         content: '';
                         height: 100%;
                         width: 100%;
-                        
                         position: absolute;
                         top: 0px;
                         left: 0px;
-                        @include linear-gradient(135deg, rgba($primary, 0.7) 0%, transparent 40%);    
+                        @include linear-gradient(135deg, rgba($primary, 0.5) 0%,rgba($primary, 0.5)   20%, transparent 60%);    
                     }
                     
                         .row {
@@ -124,7 +123,26 @@
             // }
         }
     }
+    @media (min-width: map-get($breakpoints, sm)) {
+        .swiper-container {
+        
+        .swiper-wrapper {
+        
+            .swiper-slide {
+        
+                
+                
+                     .slide-content {
+                    
+                    >.container {
+                        
+                        &:before {
+                        
+                        top: 30px;
+                        left: 15px;}}}
     
+                }}}
+       }
     @media (min-width: map-get($breakpoints, md)) {
        // height: 370px;
        
