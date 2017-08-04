@@ -176,7 +176,7 @@ function toComment(sourceMap) {
 /* 2 */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
+module.exports = "../../dist/img/home/marhaba.png";
 
 /***/ }),
 /* 3 */
@@ -21193,13 +21193,14 @@ else if (typeof define === 'function' && define.amd) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./animations.scss": 12,
-	"./fonts.scss": 13,
-	"./layout.scss": 14,
-	"./our-service.scss": 52,
-	"./page-cover.scss": 15,
-	"./page-header.scss": 16,
-	"./page-sidebar.scss": 17
+	"./animations.scss": 13,
+	"./fonts.scss": 14,
+	"./intro.scss": 55,
+	"./layout.scss": 15,
+	"./our-services.scss": 16,
+	"./page-cover.scss": 17,
+	"./page-header.scss": 18,
+	"./page-sidebar.scss": 19
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -21218,12 +21219,7 @@ module.exports = webpackContext;
 webpackContext.id = 11;
 
 /***/ }),
-/* 12 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
+/* 12 */,
 /* 13 */
 /***/ (function(module, exports) {
 
@@ -21254,12 +21250,23 @@ webpackContext.id = 11;
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 18 */,
+/* 18 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
 /* 19 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./main.js": 20
+	"./main.js": 21
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -21275,10 +21282,10 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 19;
+webpackContext.id = 20;
 
 /***/ }),
-/* 20 */
+/* 21 */
 /***/ (function(module, exports) {
 
 ////
@@ -21600,7 +21607,6 @@ var app = (function () {
  });
 
 /***/ }),
-/* 21 */,
 /* 22 */,
 /* 23 */,
 /* 24 */,
@@ -21631,7 +21637,10 @@ var app = (function () {
 /* 49 */,
 /* 50 */,
 /* 51 */,
-/* 52 */
+/* 52 */,
+/* 53 */,
+/* 54 */,
+/* 55 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

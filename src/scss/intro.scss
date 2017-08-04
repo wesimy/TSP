@@ -1,0 +1,25 @@
+@import 'base/index';
+.section-intro {
+    .intro-container {
+        background: $silver;
+        z-index: 99;
+
+        .intro-paragraph-one {
+            @include font-size($xxl-font);
+        }
+
+        .intro-background {
+            background: url(../../dist/img/home/marhaba.png) top right no-repeat;
+            background-size: coover;
+            height: 400px;
+
+            @media (min-width: map-get($breakpoints, md)) {
+                height: auto;
+            }
+        }
+
+        @media (min-width: map-get($breakpoints, md)) {
+                margin-top: -100px;
+        }
+    }
+}

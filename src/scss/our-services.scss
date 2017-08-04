@@ -1,15 +1,9 @@
 @import 'base/index';
 
-.section-our-service{
-
-    //background: url(../../dist/img/home/marhaba.png) top right no-repeat;
-     background: red;
-    padding-top: 200px;
+.section-our-services {
     h2{
      font-weight: 200;
-     text-transform: uppercase;   
-     
-
+     text-transform: uppercase;
     }
 
     // @media (min-width: map-get($breakpoints, md)) {

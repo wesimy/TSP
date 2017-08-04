@@ -10377,6 +10377,30 @@ button.swiper-pagination-bullet {
 
 .icon-trophy:before {
   content: "\E927"; }
+.section-intro .intro-container {
+  background: #fafafa;
+  z-index: 99; }
+  .section-intro .intro-container .intro-paragraph-one {
+    font-size: 20px; }
+    @media screen and (min-width: 0) {
+      .section-intro .intro-container .intro-paragraph-one {
+        font-size: 20px; } }
+    @media screen and (min-width: 768px) {
+      .section-intro .intro-container .intro-paragraph-one {
+        font-size: 24px; } }
+    @media screen and (min-width: 992px) {
+      .section-intro .intro-container .intro-paragraph-one {
+        font-size: 24px; } }
+  .section-intro .intro-container .intro-background {
+    background: url(../../dist/img/home/marhaba.png) top right no-repeat;
+    background-size: coover;
+    height: 400px; }
+    @media (min-width: 768px) {
+      .section-intro .intro-container .intro-background {
+        height: auto; } }
+  @media (min-width: 768px) {
+    .section-intro .intro-container {
+      margin-top: -100px; } }
 html,
 body {
   overflow-x: hidden;
@@ -10439,12 +10463,9 @@ a.scroll-top {
     bottom: 40px; }
   a.scroll-top:hover {
     opacity: 1; }
-.section-our-service {
-  background: red;
-  padding-top: 200px; }
-  .section-our-service h2 {
-    font-weight: 200;
-    text-transform: uppercase; }
+.section-our-services h2 {
+  font-weight: 200;
+  text-transform: uppercase; }
 .pg-cover {
   background: #fff;
   position: relative;
