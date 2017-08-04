@@ -176,20 +176,19 @@ function toComment(sourceMap) {
 /* 2 */
 /***/ (function(module, exports) {
 
-module.exports = "../../dist/img/home/marhaba.png";
+module.exports = "../../dist/img/home/service-4.png";
 
 /***/ }),
 /* 3 */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
+module.exports = "../../dist/img/home/service-3.png";
 
 /***/ }),
 /* 4 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-/* WEBPACK VAR INJECTION */(function(global) {module.exports = global["$"] = __webpack_require__(5);
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+module.exports = "../../dist/img/home/service-1.png";
 
 /***/ }),
 /* 5 */

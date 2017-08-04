@@ -2,8 +2,28 @@
 
 .section-our-services {
     h2{
-     font-weight: 200;
-     text-transform: uppercase;
+        font-weight: 200;
+        text-transform: uppercase;
+    }
+    .services {
+        text-align: center;
+
+        .service-box-1 {
+            height: 350px;
+            background: url(../../dist/img/home/service-1.png);
+        }
+        .service-box-2 {
+            height: 350px;
+            background: url(../../dist/img/home/service-2.png);
+        }
+        .service-box-3 {
+            height: 350px;
+            background: url(../../dist/img/home/service-3.png);
+        }
+        .service-box-4 {
+            height: 350px;
+            background: url(../../dist/img/home/service-4.png);
+        }
     }
 
     // @media (min-width: map-get($breakpoints, md)) {

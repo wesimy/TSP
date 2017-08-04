@@ -10379,7 +10379,7 @@ button.swiper-pagination-bullet {
   content: "\E927"; }
 .section-intro .intro-container {
   background: #fafafa;
-  z-index: 99; }
+  z-index: 9; }
   .section-intro .intro-container .intro-paragraph-one {
     font-size: 20px; }
     @media screen and (min-width: 0) {
@@ -10399,6 +10399,9 @@ button.swiper-pagination-bullet {
       .section-intro .intro-container .intro-background {
         height: auto;
         margin-top: -50px; } }
+  @media (min-width: 576px) {
+    .section-intro .intro-container {
+      margin-top: -50px; } }
   @media (min-width: 768px) {
     .section-intro .intro-container {
       margin-top: -100px; } }
@@ -10467,6 +10470,21 @@ a.scroll-top {
 .section-our-services h2 {
   font-weight: 200;
   text-transform: uppercase; }
+
+.section-our-services .services {
+  text-align: center; }
+  .section-our-services .services .service-box-1 {
+    height: 350px;
+    background: url(../../dist/img/home/service-1.png); }
+  .section-our-services .services .service-box-2 {
+    height: 350px;
+    background: url(../../dist/img/home/service-2.png); }
+  .section-our-services .services .service-box-3 {
+    height: 350px;
+    background: url(../../dist/img/home/service-3.png); }
+  .section-our-services .services .service-box-4 {
+    height: 350px;
+    background: url(../../dist/img/home/service-4.png); }
 .pg-cover {
   background: #fff;
   position: relative;
