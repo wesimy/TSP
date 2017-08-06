@@ -10467,6 +10467,9 @@ a.scroll-top {
     bottom: 40px; }
   a.scroll-top:hover {
     opacity: 1; }
+.section-managing-director .container {
+  height: 500px;
+  background: #fafafa; }
 .section-our-services h2 {
   font-weight: 200;
   text-transform: uppercase; }
@@ -10488,32 +10491,46 @@ a.scroll-top {
     display: block;
     text-decoration: none;
     color: #333333; }
+    .section-our-services .services a .service-content {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0; }
   .section-our-services .services a:hover {
     color: #fff; }
-  .section-our-services .services .service-container {
-    height: 250px; }
+  .section-our-services .services .service-container,
+  .section-our-services .services .service-container:hover {
+    position: relative;
+    height: 0px;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 66.73%; }
   .section-our-services .services .box-1 {
     background-image: url(../../dist/img/home/service-1.png); }
   .section-our-services .services .box-1:hover {
-    background-image: url(../../dist/img/home/service-1-hover.png); }
+    background-image: url(../../dist/img/home/service-1-hover.png);
+    background-repeat: no-repeat; }
   .section-our-services .services .box-2 {
     background-image: url(../../dist/img/home/service-2.png); }
   .section-our-services .services .box-2:hover {
-    background: url(../../dist/img/home/service-2-hover.png); }
+    background: url(../../dist/img/home/service-2-hover.png);
+    background-repeat: no-repeat; }
   .section-our-services .services .box-3 {
     background-image: url(../../dist/img/home/service-3.png); }
   .section-our-services .services .box-3:hover {
-    background: url(../../dist/img/home/service-3-hover.png); }
+    background: url(../../dist/img/home/service-3-hover.png);
+    background-repeat: no-repeat; }
   .section-our-services .services .box-4 {
     background-image: url(../../dist/img/home/service-4.png); }
   .section-our-services .services .box-4:hover {
-    background: url(../../dist/img/home/service-4-hover.png); }
-  @media (min-width: 576px) {
-    .section-our-services .services .service-container {
-      height: 300px; } }
+    background: url(../../dist/img/home/service-4-hover.png);
+    background-repeat: no-repeat; }
   @media (min-width: 768px) {
-    .section-our-services .services .service-container {
-      height: 350px; } }
+    .section-our-services .services .service-container,
+    .section-our-services .services .service-container:hover {
+      padding-top: 33.37%; } }
 .pg-cover {
   background: #fff;
   position: relative;
