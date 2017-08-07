@@ -10379,7 +10379,7 @@ button.swiper-pagination-bullet {
   content: "\E927"; }
 .section-intro .intro-container {
   background: #fafafa;
-  z-index: 9; }
+  z-index: 4; }
   .section-intro .intro-container .intro-paragraph-one {
     font-size: 20px; }
     @media screen and (min-width: 0) {
@@ -10467,12 +10467,64 @@ a.scroll-top {
     bottom: 40px; }
   a.scroll-top:hover {
     opacity: 1; }
-.section-managing-director .container {
-  height: 500px;
+.section-managing-director .managing-director-container {
+  height: 100%;
   background: #fafafa; }
+  .section-managing-director .managing-director-container .container-img {
+    padding-top: 50px;
+    padding-right: 80px;
+    text-align: right; }
+  .section-managing-director .managing-director-container .container-text {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 80px; }
+    .section-managing-director .managing-director-container .container-text .subtitel {
+      color: #777777;
+      font-size: 15px; }
+      @media screen and (min-width: 0) {
+        .section-managing-director .managing-director-container .container-text .subtitel {
+          font-size: 15px; } }
+      @media screen and (min-width: 768px) {
+        .section-managing-director .managing-director-container .container-text .subtitel {
+          font-size: 18px; } }
+      @media screen and (min-width: 992px) {
+        .section-managing-director .managing-director-container .container-text .subtitel {
+          font-size: 18px; } }
+    .section-managing-director .managing-director-container .container-text p {
+      font-size: 15px; }
+      @media screen and (min-width: 0) {
+        .section-managing-director .managing-director-container .container-text p {
+          font-size: 15px; } }
+      @media screen and (min-width: 768px) {
+        .section-managing-director .managing-director-container .container-text p {
+          font-size: 18px; } }
+      @media screen and (min-width: 992px) {
+        .section-managing-director .managing-director-container .container-text p {
+          font-size: 18px; } }
+    .section-managing-director .managing-director-container .container-text a {
+      font-size: 15px;
+      color: #8dc63f; }
+      @media screen and (min-width: 0) {
+        .section-managing-director .managing-director-container .container-text a {
+          font-size: 15px; } }
+      @media screen and (min-width: 768px) {
+        .section-managing-director .managing-director-container .container-text a {
+          font-size: 18px; } }
+      @media screen and (min-width: 992px) {
+        .section-managing-director .managing-director-container .container-text a {
+          font-size: 18px; } }
+  @media (min-width: 768px) {
+    .section-managing-director .managing-director-container .container-img {
+      padding-top: 100px; }
+    .section-managing-director .managing-director-container .container-text {
+      padding-top: 100px;
+      padding-bottom: 80px;
+      padding-right: 80px; } }
 .section-our-services h2 {
   font-weight: 200;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  padding-top: 100px;
+  padding-bottom: 100px; }
 
 .section-our-services .services {
   text-align: center;
@@ -10499,38 +10551,32 @@ a.scroll-top {
       right: 0; }
   .section-our-services .services a:hover {
     color: #fff; }
-  .section-our-services .services .service-container,
-  .section-our-services .services .service-container:hover {
+  .section-our-services .services .service-container {
     position: relative;
     height: 0px;
     width: 100%;
     background-size: contain;
     background-repeat: no-repeat;
-    padding-top: 66.73%; }
+    padding-top: 66.69%; }
   .section-our-services .services .box-1 {
     background-image: url(../../dist/img/home/service-1.png); }
   .section-our-services .services .box-1:hover {
-    background-image: url(../../dist/img/home/service-1-hover.png);
-    background-repeat: no-repeat; }
+    background-image: url(../../dist/img/home/service-1-hover.png); }
   .section-our-services .services .box-2 {
     background-image: url(../../dist/img/home/service-2.png); }
   .section-our-services .services .box-2:hover {
-    background: url(../../dist/img/home/service-2-hover.png);
-    background-repeat: no-repeat; }
+    background-image: url(../../dist/img/home/service-2-hover.png); }
   .section-our-services .services .box-3 {
     background-image: url(../../dist/img/home/service-3.png); }
   .section-our-services .services .box-3:hover {
-    background: url(../../dist/img/home/service-3-hover.png);
-    background-repeat: no-repeat; }
+    background-image: url(../../dist/img/home/service-3-hover.png); }
   .section-our-services .services .box-4 {
     background-image: url(../../dist/img/home/service-4.png); }
   .section-our-services .services .box-4:hover {
-    background: url(../../dist/img/home/service-4-hover.png);
-    background-repeat: no-repeat; }
+    background-image: url(../../dist/img/home/service-4-hover.png); }
   @media (min-width: 768px) {
-    .section-our-services .services .service-container,
-    .section-our-services .services .service-container:hover {
-      padding-top: 33.37%; } }
+    .section-our-services .services .service-container {
+      padding-top: 33.365%; } }
 .pg-cover {
   background: #fff;
   position: relative;
