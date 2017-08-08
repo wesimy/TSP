@@ -1,49 +1,72 @@
 @import 'base/index';
 .section-managing-director {
-
     .managing-director-container {
         height: 100%;
         background: $silver;
 
-        .container-img {
+        .img-wrapp {
             padding-top: 50px;
-            padding-right: 80px;
             //text-align: right;
-        }
 
+            img {
+                position: relative;
+                z-index: 4;
+            }
+            &:before, &:after {
+                display: inline-block;
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                z-index: 3;
+            }
+            &:before {
+                content: "";
+                background: rgba($primary, 0.05);
+                top: 30px;
+                left: 40px;
+                //margin-left: 20px;
+            }
+            &:after {
+                content: "";
+                background: rgba($primary, 0.01);
+                top: 180px;
+                left: 150px;
+                //margin-top: -170px;
+                //margin-left: 130px;
+            }
+        }
         .container-text {
             padding-top: 50px;
             padding-bottom: 50px;
             padding-right: 80px;
-
             .subtitel {
                 color: $grey;
                 @include font-size($lg-font);
             }
-
             p {
                 @include font-size($lg-font);
             }
-
             a {
                 @include font-size($lg-font);
                 color: $link;
             }
         }
-
         @media (min-width: map-get($breakpoints, md)) {
-            .container-img {
-                padding-top: 100px;
+            .img-wrapp {
+                padding-top: 80px;
+                &:before {
+                    top: 60px;
+                }
+                &:after {
+                    top: 210px;
+                }
 
             }
-
             .container-text {
                 padding-top: 100px;
                 padding-bottom: 80px;
                 padding-right: 80px;
             }
         }
-        
     }
-
 }
