@@ -1,0 +1,9 @@
+@import 'base/index';
+.section-who-we-are {
+    height: 100%;
+
+    p {
+        @include font-size($md-font);
+        text-transform: uppercase;
+    }
+}

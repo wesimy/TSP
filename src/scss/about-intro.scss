@@ -1,0 +1,21 @@
+@import 'base/index';
+.section-about-intro {
+    margin-top: -50px;
+
+    h1 {
+        color: $white;
+        @include font-size($xxxl-font);
+        font-weight: 200;
+    }
+    .intro-container {
+        background: $silver;
+        @include font-size($md-font);
+        z-index: 4;
+    }
+    @media (min-width: map-get($breakpoints, sm)) {
+        margin-top: -100px;
+    }
+    @media (min-width: map-get($breakpoints, md)) {
+        margin-top: -130px;
+    }
+}

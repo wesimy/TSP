@@ -21193,16 +21193,19 @@ else if (typeof define === 'function' && define.amd) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./animations.scss": 12,
-	"./fonts.scss": 13,
-	"./intro.scss": 14,
-	"./layout.scss": 15,
-	"./managing-director.scss": 16,
-	"./our-services.scss": 17,
-	"./page-cover.scss": 18,
-	"./page-footer.scss": 19,
-	"./page-header.scss": 20,
-	"./page-sidebar.scss": 21
+	"./about-intro.scss": 12,
+	"./animations.scss": 13,
+	"./fonts.scss": 14,
+	"./intro.scss": 15,
+	"./layout.scss": 16,
+	"./managing-director.scss": 17,
+	"./our-services.scss": 18,
+	"./page-cover.scss": 19,
+	"./page-footer.scss": 20,
+	"./page-header.scss": 21,
+	"./page-media.scss": 22,
+	"./page-sidebar.scss": 23,
+	"./who-we-are.scss": 75
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -21282,10 +21285,22 @@ webpackContext.id = 11;
 
 /***/ }),
 /* 22 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 23 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./main.js": 23
+	"./main.js": 25
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -21301,10 +21316,10 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 22;
+webpackContext.id = 24;
 
 /***/ }),
-/* 23 */
+/* 25 */
 /***/ (function(module, exports) {
 
 ////
@@ -21624,6 +21639,61 @@ var app = (function () {
      app.init();
      
  });
+
+/***/ }),
+/* 26 */,
+/* 27 */,
+/* 28 */,
+/* 29 */,
+/* 30 */,
+/* 31 */,
+/* 32 */,
+/* 33 */,
+/* 34 */,
+/* 35 */,
+/* 36 */,
+/* 37 */,
+/* 38 */,
+/* 39 */,
+/* 40 */,
+/* 41 */,
+/* 42 */,
+/* 43 */,
+/* 44 */,
+/* 45 */,
+/* 46 */,
+/* 47 */,
+/* 48 */,
+/* 49 */,
+/* 50 */,
+/* 51 */,
+/* 52 */,
+/* 53 */,
+/* 54 */,
+/* 55 */,
+/* 56 */,
+/* 57 */,
+/* 58 */,
+/* 59 */,
+/* 60 */,
+/* 61 */,
+/* 62 */,
+/* 63 */,
+/* 64 */,
+/* 65 */,
+/* 66 */,
+/* 67 */,
+/* 68 */,
+/* 69 */,
+/* 70 */,
+/* 71 */,
+/* 72 */,
+/* 73 */,
+/* 74 */,
+/* 75 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);
