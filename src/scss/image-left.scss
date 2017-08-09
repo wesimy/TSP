@@ -1,5 +1,5 @@
 @import 'base/index';
-.section-who-we-are {
+.section-image-left {
     height: 100%;
     .img-wrapp {
         padding-top: 40px;
@@ -34,7 +34,12 @@
     h2 {
         @include font-size($xxxl-font);
         padding-bottom: 20px;
-        //font-weight: 200;
+    }
+    h3 {
+        @include font-size($xl-font);
+        //text-transform: uppercase;
+        margin-top: 20px;
+        margin-bottom: 0px;
     }
     p {
         @include font-size($md-font);
