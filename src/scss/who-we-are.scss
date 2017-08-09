@@ -1,9 +1,79 @@
 @import 'base/index';
 .section-who-we-are {
     height: 100%;
+    .img-wrapp {
+        padding-top: 40px;
+        padding-left:20px;
 
+        img {
+            width: 200px;
+            position: relative;
+        }
+        &:before,
+        &:after {
+            display: inline-block;
+            position: absolute;
+            width: 200px;
+            z-index: -1;
+        }
+        &:before {
+            content: "";
+            background: $overlay;
+            height: 270px;
+            top: 90px;
+            left: 0px;
+        }
+        &:after {
+            content: "";
+            background: $overlay;
+            height: 230px;
+            top: 70px;
+            left: 40px;
+        }
+    }
+    h2 {
+        @include font-size($xxxl-font);
+        padding-bottom: 20px;
+        //font-weight: 200;
+    }
     p {
         @include font-size($md-font);
         text-transform: uppercase;
+    }
+
+    @media (min-width: map-get($breakpoints, md)) {
+        .img-wrapp {
+            padding-top: 80px;
+
+            &:before {
+                top: 130px;
+            }
+            &:after {
+                top: 100px;
+            }
+        }
+    }
+
+    @media (min-width: map-get($breakpoints, lg)) {
+        .img-wrapp {
+            padding-left:30px;
+
+            img {
+                width: auto;
+            }
+            &:before,
+            &:after {
+                width: 300px;
+            }
+            &:before {
+                height: 410px;
+                top: 170px;
+            }
+            &:after {
+                height: 350px;
+                top: 120px;
+                left: 75px;
+            }
+        }
     }
 }
