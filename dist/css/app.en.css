@@ -10743,7 +10743,7 @@ a.scroll-top {
         right: 65px; } }
   @media (min-width: 768px) {
     .section-managing-director .managing-director-container .img-wrapp {
-      padding-top: 80px;
+      padding-top: 100px;
       padding-right: 80px; }
       .section-managing-director .managing-director-container .img-wrapp img {
         width: auto; }
@@ -10751,10 +10751,10 @@ a.scroll-top {
         width: 200px;
         height: 200px; }
       .section-managing-director .managing-director-container .img-wrapp:before {
-        top: 60px;
+        top: 80px;
         right: 170px; }
       .section-managing-director .managing-director-container .img-wrapp:after {
-        top: 200px;
+        top: 220px;
         right: 58px; }
     .section-managing-director .managing-director-container .container-text {
       padding-top: 100px;
