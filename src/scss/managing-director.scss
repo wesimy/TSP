@@ -6,31 +6,32 @@
 
         .img-wrapp {
             padding-top: 50px;
-            padding-right: 15%;
+            padding-right: 70px;
             text-align: right;
 
             img {
                 position: relative;
+                width: 200px;
                 z-index:4;
             }
             &:before, &:after {
                 display: inline-block;
                 position: absolute;
-                width: 200px;
-                height: 200px;
+                width: 150px;
+                height: 150px;
                 z-index: 3;
             }
             &:before {
                 content: "";
                 background: rgba($primary, 0.05);
-                top: 30px;
-                right: 25%;
+                top: 35px;
+                right: 100px;
             }
             &:after {
                 content: "";
                 background: rgba($primary, 0.01);
-                top: 170px;
-                right: 12%;
+                top: 115px;
+                right: 55px;
             }
         }
         .container-text {
@@ -49,18 +50,39 @@
                 color: $link;
             }
         }
+
+        @media (min-width: map-get($breakpoints, sm)) {
+            .img-wrapp {
+                padding-right: 80px;
+
+                &:before {
+                    right: 120px;
+                }
+                &:after {
+                    right: 65px;
+                }
+            }
+        }
+
         @media (min-width: map-get($breakpoints, md)) {
             .img-wrapp {
                 padding-top: 80px;
-                padding-right: 5%;
+                padding-right: 80px;
 
+                img {
+                    width: auto;
+                }
+                &:before, &:after {
+                    width: 200px;
+                    height: 200px;
+                }
                 &:before {
                     top: 60px;
-                    right: 25%;
+                    right: 170px;
                 }
                 &:after {
                     top: 200px;
-                    right: 6%;
+                    right: 58px;
                 }
 
             }

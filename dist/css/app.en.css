@@ -10411,6 +10411,34 @@ button.swiper-pagination-bullet {
 
 .icon-trophy:before {
   content: "\E927"; }
+.section-home-intro .intro-container {
+  background: #fafafa;
+  z-index: 4; }
+  .section-home-intro .intro-container .intro-paragraph-one {
+    font-size: 20px; }
+    @media screen and (min-width: 0) {
+      .section-home-intro .intro-container .intro-paragraph-one {
+        font-size: 20px; } }
+    @media screen and (min-width: 768px) {
+      .section-home-intro .intro-container .intro-paragraph-one {
+        font-size: 24px; } }
+    @media screen and (min-width: 992px) {
+      .section-home-intro .intro-container .intro-paragraph-one {
+        font-size: 24px; } }
+  .section-home-intro .intro-container .intro-background {
+    margin-top: -150px;
+    background: url(../../dist/img/home/marhaba.png) top right no-repeat;
+    height: 480px; }
+    @media (min-width: 992px) {
+      .section-home-intro .intro-container .intro-background {
+        height: auto;
+        margin-top: -50px; } }
+  @media (min-width: 576px) {
+    .section-home-intro .intro-container {
+      margin-top: -50px; } }
+  @media (min-width: 768px) {
+    .section-home-intro .intro-container {
+      margin-top: -100px; } }
 .section-image-left {
   height: 100%; }
   .section-image-left .img-wrapp {
@@ -10578,34 +10606,6 @@ button.swiper-pagination-bullet {
         height: 350px;
         top: 120px;
         right: 75px; } }
-.section-intro .intro-container {
-  background: #fafafa;
-  z-index: 4; }
-  .section-intro .intro-container .intro-paragraph-one {
-    font-size: 20px; }
-    @media screen and (min-width: 0) {
-      .section-intro .intro-container .intro-paragraph-one {
-        font-size: 20px; } }
-    @media screen and (min-width: 768px) {
-      .section-intro .intro-container .intro-paragraph-one {
-        font-size: 24px; } }
-    @media screen and (min-width: 992px) {
-      .section-intro .intro-container .intro-paragraph-one {
-        font-size: 24px; } }
-  .section-intro .intro-container .intro-background {
-    margin-top: -150px;
-    background: url(../../dist/img/home/marhaba.png) top right no-repeat;
-    height: 480px; }
-    @media (min-width: 768px) {
-      .section-intro .intro-container .intro-background {
-        height: auto;
-        margin-top: -50px; } }
-  @media (min-width: 576px) {
-    .section-intro .intro-container {
-      margin-top: -50px; } }
-  @media (min-width: 768px) {
-    .section-intro .intro-container {
-      margin-top: -100px; } }
 html,
 body {
   overflow-x: hidden;
@@ -10673,27 +10673,28 @@ a.scroll-top {
   background: #fafafa; }
   .section-managing-director .managing-director-container .img-wrapp {
     padding-top: 50px;
-    padding-right: 15%;
+    padding-right: 70px;
     text-align: right; }
     .section-managing-director .managing-director-container .img-wrapp img {
       position: relative;
+      width: 200px;
       z-index: 4; }
     .section-managing-director .managing-director-container .img-wrapp:before, .section-managing-director .managing-director-container .img-wrapp:after {
       display: inline-block;
       position: absolute;
-      width: 200px;
-      height: 200px;
+      width: 150px;
+      height: 150px;
       z-index: 3; }
     .section-managing-director .managing-director-container .img-wrapp:before {
       content: "";
       background: rgba(22, 39, 50, 0.05);
-      top: 30px;
-      right: 25%; }
+      top: 35px;
+      right: 100px; }
     .section-managing-director .managing-director-container .img-wrapp:after {
       content: "";
       background: rgba(22, 39, 50, 0.01);
-      top: 170px;
-      right: 12%; }
+      top: 115px;
+      right: 55px; }
   .section-managing-director .managing-director-container .container-text {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -10733,16 +10734,28 @@ a.scroll-top {
       @media screen and (min-width: 992px) {
         .section-managing-director .managing-director-container .container-text a {
           font-size: 18px; } }
+  @media (min-width: 576px) {
+    .section-managing-director .managing-director-container .img-wrapp {
+      padding-right: 80px; }
+      .section-managing-director .managing-director-container .img-wrapp:before {
+        right: 120px; }
+      .section-managing-director .managing-director-container .img-wrapp:after {
+        right: 65px; } }
   @media (min-width: 768px) {
     .section-managing-director .managing-director-container .img-wrapp {
       padding-top: 80px;
-      padding-right: 5%; }
+      padding-right: 80px; }
+      .section-managing-director .managing-director-container .img-wrapp img {
+        width: auto; }
+      .section-managing-director .managing-director-container .img-wrapp:before, .section-managing-director .managing-director-container .img-wrapp:after {
+        width: 200px;
+        height: 200px; }
       .section-managing-director .managing-director-container .img-wrapp:before {
         top: 60px;
-        right: 25%; }
+        right: 170px; }
       .section-managing-director .managing-director-container .img-wrapp:after {
         top: 200px;
-        right: 6%; }
+        right: 58px; }
     .section-managing-director .managing-director-container .container-text {
       padding-top: 100px;
       padding-bottom: 80px;

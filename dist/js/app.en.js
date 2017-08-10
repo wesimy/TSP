@@ -176,7 +176,7 @@ function toComment(sourceMap) {
 /* 2 */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
+module.exports = "../../dist/img/home/marhaba.png";
 
 /***/ }),
 /* 3 */
@@ -21196,9 +21196,9 @@ var map = {
 	"./about-intro.scss": 12,
 	"./animations.scss": 13,
 	"./fonts.scss": 14,
+	"./home-intro.scss": 86,
 	"./image-left.scss": 74,
 	"./image-right.scss": 77,
-	"./intro.scss": 15,
 	"./layout.scss": 16,
 	"./managing-director.scss": 17,
 	"./our-services.scss": 18,
@@ -21243,12 +21243,7 @@ webpackContext.id = 11;
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 15 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
+/* 15 */,
 /* 16 */
 /***/ (function(module, exports) {
 
@@ -21699,6 +21694,20 @@ var app = (function () {
 /* 75 */,
 /* 76 */,
 /* 77 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 78 */,
+/* 79 */,
+/* 80 */,
+/* 81 */,
+/* 82 */,
+/* 83 */,
+/* 84 */,
+/* 85 */,
+/* 86 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

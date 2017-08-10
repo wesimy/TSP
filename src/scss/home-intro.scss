@@ -1,5 +1,5 @@
 @import 'base/index';
-.section-intro {
+.section-home-intro {
     .intro-container {
         background: $silver;
         z-index: 4;
@@ -13,7 +13,7 @@
             background: url(../../dist/img/home/marhaba.png) top right no-repeat;
             height: 480px;
 
-            @media (min-width: map-get($breakpoints, md)) {
+            @media (min-width: map-get($breakpoints, lg)) {
                 height: auto;
                 margin-top: -50px;
             }
