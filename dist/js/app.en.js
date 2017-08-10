@@ -92,91 +92,53 @@ module.exports = g;
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-/*
-	MIT License http://www.opensource.org/licenses/mit-license.php
-	Author Tobias Koppers @sokra
-*/
-// css base code, injected by the css-loader
-module.exports = function(useSourceMap) {
-	var list = [];
+/////////////////////////
+// Library CSS Files
+// Add your library css files here
+///////////////////////////////////////////////
+__webpack_require__(2); 
+__webpack_require__(3); 
 
-	// return the list of modules as css string
-	list.toString = function toString() {
-		return this.map(function (item) {
-			var content = cssWithMappingToString(item, useSourceMap);
-			if(item[2]) {
-				return "@media " + item[2] + "{" + content + "}";
-			} else {
-				return content;
-			}
-		}).join("");
-	};
+//////////////////
+// LIBRARY FILES
+// Add your custom library js requires here
+// use: expose-loader  to expose a library to public access
+////////////////////////////////////////////////////////////
+__webpack_require__(4);
+__webpack_require__(7);
+__webpack_require__(9);
+__webpack_require__(10); 
 
-	// import a list of modules into the list
-	list.i = function(modules, mediaQuery) {
-		if(typeof modules === "string")
-			modules = [[null, modules, ""]];
-		var alreadyImportedModules = {};
-		for(var i = 0; i < this.length; i++) {
-			var id = this[i][0];
-			if(typeof id === "number")
-				alreadyImportedModules[id] = true;
-		}
-		for(i = 0; i < modules.length; i++) {
-			var item = modules[i];
-			// skip already imported module
-			// this implementation is not 100% perfect for weird media query combinations
-			//  when a module is imported multiple times with different media queries.
-			//  I hope this will never occur (Hey this way we have smaller bundles)
-			if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
-				if(mediaQuery && !item[2]) {
-					item[2] = mediaQuery;
-				} else if(mediaQuery) {
-					item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
-				}
-				list.push(item);
-			}
-		}
-	};
-	return list;
-};
+//////////////////  
+// APP SCSS FILES
+// do not change this 
+// Imports custom js modules in JS folder
+//////////////////////////////////////////
+var requireSCSS = __webpack_require__(11);
+requireSCSS.keys().forEach(requireSCSS); 
 
-function cssWithMappingToString(item, useSourceMap) {
-	var content = item[1] || '';
-	var cssMapping = item[3];
-	if (!cssMapping) {
-		return content;
-	}
+////////////////// 
+// APP JS FILES
+// do not change this 
+// Imports custom js modules in JS folder
+//////////////////////////////////////////
+var requireJS = __webpack_require__(26);
+requireJS.keys().forEach(requireJS); 
+ 
+//////////////////
+// APP INIT
+// Application Init module. 
+////////////////////////////////////////////////////////////
 
-	if (useSourceMap && typeof btoa === 'function') {
-		var sourceMapping = toComment(cssMapping);
-		var sourceURLs = cssMapping.sources.map(function (source) {
-			return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */'
-		});
-
-		return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
-	}
-
-	return [content].join('\n');
-}
-
-// Adapted from convert-source-map (MIT)
-function toComment(sourceMap) {
-	// eslint-disable-next-line no-undef
-	var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));
-	var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;
-
-	return '/*# ' + data + ' */';
-}
 
 
 /***/ }),
 /* 2 */
 /***/ (function(module, exports) {
 
-module.exports = "../../dist/img/home/marhaba.png";
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 /* 3 */
@@ -21196,17 +21158,17 @@ var map = {
 	"./about-intro.scss": 12,
 	"./animations.scss": 13,
 	"./fonts.scss": 14,
-	"./home-intro.scss": 86,
-	"./image-left.scss": 74,
-	"./image-right.scss": 77,
-	"./layout.scss": 16,
-	"./managing-director.scss": 17,
-	"./our-services.scss": 18,
-	"./page-cover.scss": 19,
-	"./page-footer.scss": 20,
-	"./page-header.scss": 21,
-	"./page-media.scss": 22,
-	"./page-sidebar.scss": 23
+	"./home-intro.scss": 15,
+	"./image-left.scss": 16,
+	"./image-right.scss": 17,
+	"./layout.scss": 18,
+	"./managing-director.scss": 19,
+	"./our-services.scss": 20,
+	"./page-cover.scss": 21,
+	"./page-footer.scss": 22,
+	"./page-header.scss": 23,
+	"./page-media.scss": 24,
+	"./page-sidebar.scss": 25
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -21243,7 +21205,12 @@ webpackContext.id = 11;
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 15 */,
+/* 15 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
 /* 16 */
 /***/ (function(module, exports) {
 
@@ -21292,12 +21259,23 @@ webpackContext.id = 11;
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 24 */,
+/* 24 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
 /* 25 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./main.js": 26
+	"./main.js": 27
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -21313,10 +21291,10 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 25;
+webpackContext.id = 26;
 
 /***/ }),
-/* 26 */
+/* 27 */
 /***/ (function(module, exports) {
 
 ////
@@ -21636,81 +21614,6 @@ var app = (function () {
      app.init();
      
  });
-
-/***/ }),
-/* 27 */,
-/* 28 */,
-/* 29 */,
-/* 30 */,
-/* 31 */,
-/* 32 */,
-/* 33 */,
-/* 34 */,
-/* 35 */,
-/* 36 */,
-/* 37 */,
-/* 38 */,
-/* 39 */,
-/* 40 */,
-/* 41 */,
-/* 42 */,
-/* 43 */,
-/* 44 */,
-/* 45 */,
-/* 46 */,
-/* 47 */,
-/* 48 */,
-/* 49 */,
-/* 50 */,
-/* 51 */,
-/* 52 */,
-/* 53 */,
-/* 54 */,
-/* 55 */,
-/* 56 */,
-/* 57 */,
-/* 58 */,
-/* 59 */,
-/* 60 */,
-/* 61 */,
-/* 62 */,
-/* 63 */,
-/* 64 */,
-/* 65 */,
-/* 66 */,
-/* 67 */,
-/* 68 */,
-/* 69 */,
-/* 70 */,
-/* 71 */,
-/* 72 */,
-/* 73 */,
-/* 74 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 75 */,
-/* 76 */,
-/* 77 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 78 */,
-/* 79 */,
-/* 80 */,
-/* 81 */,
-/* 82 */,
-/* 83 */,
-/* 84 */,
-/* 85 */,
-/* 86 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);
