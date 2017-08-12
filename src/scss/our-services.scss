@@ -11,12 +11,29 @@
         text-transform: uppercase;
         @include font-size($xxl-font);
 
-        a {
-            display: block;
-            text-decoration: none;
+        .service-wrapp {
             color: $black;
+            position: relative;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size:cover;
+            -webkit-filter: grayscale(1); /* Old WebKit */
+            filter: grayscale(1);
+            padding-top: 66.69%; // (img-height / img-width * width)
+            @include transition(all 300ms ease);
 
-            .service-content {
+            &:after {
+                content: "";
+                @include linear-gradient(to bottom right, rgba($white, 0.8) 10%,rgba($white, 0.6) 50%);
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                z-index: -1;
+            }
+            .service-text {
                 position: absolute;
                 top: 0;
                 bottom: 0;
@@ -24,48 +41,19 @@
                 right: 0;
             }
         }
-        a:hover {
+        .service-wrapp:hover {
             color: $white;
-        }
-        .service-container {
-            position: relative;
-            height: 0px;
-            width: 100%;
-            background-size: contain;
-            background-repeat: no-repeat;
-            padding-top: 66.69% // (img-height / img-width * width)
-        }
-        .box-1 {
-            background-image: url(../../dist/img/home/service-1.png); 
-            //@include linear-gradient(to right, rgba($white, 0.5) 0%,rgba($white, 0.5)   20%, transparent 60%);
-        }
-        .box-1:hover {
-            background-image: url(../../dist/img/home/service-1-hover.png);
-        }
-        .box-2 {
-            background-image: url(../../dist/img/home/service-2.png); 
-            //@include linear-gradient(to right, rgba($white, 0.5) 0%,rgba($white, 0.5)   20%, transparent 60%);
-        }
-        .box-2:hover {
-            background-image: url(../../dist/img/home/service-2-hover.png);
-        }
-        .box-3 {
-            background-image: url(../../dist/img/home/service-3.png); 
-            //@include linear-gradient(to right, rgba($white, 0.5) 0%,rgba($white, 0.5)   20%, transparent 60%);
-        }
-        .box-3:hover {
-            background-image: url(../../dist/img/home/service-3-hover.png);
-        }
-        .box-4 {
-            background-image: url(../../dist/img/home/service-4.png); 
-            //@include linear-gradient(to right, rgba($white, 0.5) 0%,rgba($white, 0.5)   20%, transparent 60%);
-        }
-        .box-4:hover {
-            background-image: url(../../dist/img/home/service-4-hover.png);
+            -webkit-filter: none; /* Old WebKit */
+            filter:none;
+            opacity: 1;
+
+            &:after {
+                display: none;
+            }
         }
 
         @media (min-width: map-get($breakpoints, md)) {
-            .service-container {
+            .service-wrapp {
                 padding-top: 33.365% // (img-height / img-width * width)
             }
         }

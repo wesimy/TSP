@@ -24,6 +24,7 @@
                     height: 100%;
                     >.container {
                         height: 100%;
+                        
                         &:before {
                         content: '';
                         height: 100%;
@@ -32,7 +33,7 @@
                         top: 0px;
                         left: 0px;
                         @include linear-gradient(135deg, rgba($primary, 0.5) 0%,rgba($primary, 0.5)   20%, transparent 60%);    
-                    }
+                        }
                     
                         .row {
                             height: 100%;
