@@ -10767,7 +10767,6 @@ a.scroll-top {
   padding-bottom: 100px; }
 
 .section-our-services .services {
-  text-align: center;
   text-transform: uppercase;
   font-size: 20px; }
   @media screen and (min-width: 0) {
@@ -10780,16 +10779,15 @@ a.scroll-top {
     .section-our-services .services {
       font-size: 24px; } }
   .section-our-services .services .service-wrapp {
+    height: 320px;
     color: #333333;
     position: relative;
-    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     -webkit-filter: grayscale(1);
     /* Old WebKit */
     filter: grayscale(1);
-    padding-top: 66.69%;
     -moz-transition: all 300ms ease;
     -o-transition: all 300ms ease;
     -webkit-transition: all 300ms ease;
@@ -10821,7 +10819,13 @@ a.scroll-top {
       display: none; }
   @media (min-width: 768px) {
     .section-our-services .services .service-wrapp {
-      padding-top: 33.365%; } }
+      height: 240px; } }
+  @media (min-width: 992px) {
+    .section-our-services .services .service-wrapp {
+      height: 320px; } }
+  @media (min-width: 1200px) {
+    .section-our-services .services .service-wrapp {
+      height: 380px; } }
 .pg-cover {
   background: #fff;
   position: relative;

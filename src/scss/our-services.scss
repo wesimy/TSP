@@ -7,20 +7,19 @@
         padding-bottom: 100px;
     }
     .services {
-        text-align: center;
         text-transform: uppercase;
         @include font-size($xxl-font);
 
         .service-wrapp {
+            height: 320px;
             color: $black;
             position: relative;
-            background-size: 100% 100%;
             background-repeat: no-repeat;
             background-position: center center;
             background-size:cover;
             -webkit-filter: grayscale(1); /* Old WebKit */
             filter: grayscale(1);
-            padding-top: 66.69%; // (img-height / img-width * width)
+            //padding-top: 66.69%; // (img-height / img-width * width)
             @include transition(all 300ms ease);
 
             &:after {
@@ -54,7 +53,20 @@
 
         @media (min-width: map-get($breakpoints, md)) {
             .service-wrapp {
-                padding-top: 33.365% // (img-height / img-width * width)
+                height: 240px;
+                //padding-top: 33.365%; // (img-height / img-width * width)
+            }
+        }
+        @media (min-width: map-get($breakpoints, lg)) {
+            .service-wrapp {
+                height: 320px;
+                //padding-top: 33.365%; // (img-height / img-width * width)
+            }
+        }
+        @media (min-width: map-get($breakpoints, xl)) {
+            .service-wrapp {
+                height: 380px;
+                //padding-top: 33.365%; // (img-height / img-width * width)
             }
         }
     } 
