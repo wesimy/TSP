@@ -36,6 +36,13 @@ h4
   
 }
 
+a{
+    text-decoration: none;
+    &:hover{
+        text-decoration: none;
+    }
+}
+
 //////////////
 // links
 ////////////

@@ -95,7 +95,8 @@ var app = (function () {
                     nextButton: $(e).parent().find('.swiper-button-next'),
                     prevButton: $(e).parent().find('.swiper-button-prev'),
                     slidesPerView: spv,
-                    speed: 1000
+                    speed: 1000,
+                    autoplay: 4000
 
                 };
 

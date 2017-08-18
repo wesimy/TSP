@@ -44,8 +44,14 @@
                             height: 100%;
                             h1 {
                                 @include font-size($xxxl-font);
-                                
+                                color:$white;
+                                text-transform: uppercase;
+                                padding: 0 30px;
+                                @media (min-width: map-get($breakpoints, sm)) {
+                                    padding: 0 60px;
+                                }
                             }
+                            
                             .btn {
                                 opacity: 0;
                                 @include animation('fade-down 0.5s normal 0s backwards ease');
