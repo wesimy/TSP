@@ -27,12 +27,12 @@
                         
                         &:before {
                         content: '';
-                        height: 100%;
-                        width: 100%;
+                        height:  calc(100% - 30px);
+                        width: calc(100% - 30px);
                         position: absolute;
                         top: 0px;
                         left: 0px;
-                        @include linear-gradient(135deg, rgba($primary, 0.5) 0%,rgba($primary, 0.5)   20%, transparent 60%);    
+                        @include linear-gradient(155deg, rgba($primary, 0.5)   20%, transparent 40%);    
                         }
                     
                         .row {
