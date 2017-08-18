@@ -10530,6 +10530,9 @@ a {
   a:hover {
     text-decoration: none; }
 
+p {
+  text-align: justify; }
+
 /*----------------------
 // Scroll Top Button
 ------------------------*/
