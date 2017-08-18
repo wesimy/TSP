@@ -284,7 +284,7 @@ var app = (function () {
                     scrollBtn.removeClass('scroll-on');
                 }
                 if ($(window).scrollTop() >= $(document).height() - $(window).height() - 20 && !scrollBtn.hasClass('scroll-bottom')) {
-                    scrollBtn.addClass('scroll-bottom')
+                    scrollBtn.addClass('scroll-bottom');
                 } else if ($(window).scrollTop() < $(document).height() - $(window).height() - 20 && scrollBtn.hasClass('scroll-bottom')) {
                     scrollBtn.removeClass('scroll-bottom');
                 }

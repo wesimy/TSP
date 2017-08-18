@@ -10902,14 +10902,18 @@ a.scroll-top {
             height: 100%; }
             .pg-cover .swiper-container .swiper-wrapper .swiper-slide .slide-content > .container:before {
               content: '';
-              height: calc(100% - 30px);
-              width: calc(100% - 30px);
+              height: 100%;
+              width: 100%;
               position: absolute;
               top: 0px;
               left: 0px;
               background: rgba(22, 39, 50, 0.5);
-              background: -webkit-linear-gradient(-65deg, rgba(22, 39, 50, 0.5) 20%, transparent 40%);
-              background: linear-gradient(155deg, rgba(22, 39, 50, 0.5) 20%, transparent 40%); }
+              background: -webkit-linear-gradient(-65deg, rgba(22, 39, 50, 0.5) 20%, transparent 50%);
+              background: linear-gradient(155deg, rgba(22, 39, 50, 0.5) 20%, transparent 50%); }
+              @media (min-width: 576px) {
+                .pg-cover .swiper-container .swiper-wrapper .swiper-slide .slide-content > .container:before {
+                  height: calc(100% - 30px);
+                  width: calc(100% - 30px); } }
             .pg-cover .swiper-container .swiper-wrapper .swiper-slide .slide-content > .container .row {
               height: 100%; }
               .pg-cover .swiper-container .swiper-wrapper .swiper-slide .slide-content > .container .row h1 {

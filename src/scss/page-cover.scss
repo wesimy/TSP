@@ -27,12 +27,17 @@
                         
                         &:before {
                         content: '';
-                        height:  calc(100% - 30px);
-                        width: calc(100% - 30px);
+                        height:  100%;
+                        width: 100%;
                         position: absolute;
                         top: 0px;
                         left: 0px;
-                        @include linear-gradient(155deg, rgba($primary, 0.5)   20%, transparent 40%);    
+                        @include linear-gradient(155deg, rgba($primary, 0.5)   20%, transparent 50%);  
+                        @media (min-width: map-get($breakpoints, sm)) {
+                            height:  calc(100% - 30px);
+                            width: calc(100% - 30px);
+                        } 
+                         
                         }
                     
                         .row {
