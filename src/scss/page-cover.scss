@@ -96,8 +96,8 @@
     }
     .swiper-arrows {
         position: absolute;
-        bottom: 0px;
-        right: 0;
+        bottom: 30px;
+        right: 30px;
         width: 100%;
         padding: 0;
         height: 60px;
@@ -111,7 +111,9 @@
             width: auto;
             height: auto;
             margin: 10px 5px;
-            @include font-size($xxxl-font);
+            background: $primary;
+            padding: 15px;
+            @include font-size($xl-font);
             display: inline-block;
             &:before {
                 @include ifont;
@@ -122,17 +124,16 @@
         }
         .swiper-button-next {
             right: 0;
-            // &:before {
-            //     -ltr-content: "\e92e";
-            //     -rtl-content: "\e92d";
-            // }
+            &:before {
+                content: "\e902";
+
+            }
         }
         .swiper-button-prev {
             right: 40px;
-            // &:before {
-            //     -rtl-content: "\e92e";
-            //     -ltr-content: "\e92d";
-            // }
+            &:before {
+                content: "\e901";
+            }
         }
     }
     @media (min-width: map-get($breakpoints, sm)) {
@@ -163,6 +164,8 @@
 
         .swiper-arrows {
             height: 80px;
+            bottom: 100px;
+            right: 0px;
             .swiper-button-prev,
             .swiper-button-next{
                 &:before{
