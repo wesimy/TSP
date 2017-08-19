@@ -19,12 +19,13 @@
     }
     .header-title{
         font-family: 'Bembo','Times New Roman', Times, serif;
-        text-align: center;
+        text-align: left;
         h1{color: $secondary;
         @include font-size($xxl-font);
         margin: 0;
         }
         p{
+            text-align: left;
             color: $white;
             margin: 0;
             @include font-size($lg-font);

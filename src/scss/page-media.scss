@@ -2,12 +2,13 @@
 .pg-media {
     background: $white;
     position: relative;
+
     //height: 100%;
     .img-wrapper {
         position: relative;
         height: 0px;
         width: 100%;
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
         padding-top: 37.8%/* (img-height / img-width * width) */
         /* (853 / 1280 * 100) */

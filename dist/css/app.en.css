@@ -11022,7 +11022,7 @@ a.scroll-top {
     float: right; }
   .pg-header .header-title {
     font-family: 'Bembo','Times New Roman', Times, serif;
-    text-align: center; }
+    text-align: left; }
     .pg-header .header-title h1 {
       color: #8dc63f;
       font-size: 20px;
@@ -11037,6 +11037,7 @@ a.scroll-top {
         .pg-header .header-title h1 {
           font-size: 24px; } }
     .pg-header .header-title p {
+      text-align: left;
       color: #fff;
       margin: 0;
       font-size: 15px; }
@@ -11063,7 +11064,7 @@ a.scroll-top {
     position: relative;
     height: 0px;
     width: 100%;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     padding-top: 37.8%; }
 .pg-sidebar {
