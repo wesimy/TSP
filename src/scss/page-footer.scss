@@ -2,31 +2,27 @@
 .pg-footer {
     background: $primary;
     width: 100%;
-    padding:  15px;
-
+    padding: 15px;
     .footer-index {
         padding-top: 80px;
         padding-bottom: 80px;
-
         .header-brand {
-            padding-left:40px;
-
-            img{
+            padding-left: 40px;
+            img {
                 width: 120px;
             }
         }
-
         ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
             overflow: hidden;
-            
+            -webkit-column-count: 1;
+            -moz-column-count: 1;
+            column-count: 1;
             li {
-                //float: right;
-
                 a {
-                    display:block;
+                    display: block;
                     color: $silver;
                     text-align: left;
                     text-transform: uppercase;
@@ -39,15 +35,13 @@
                 a:hover {
                     text-decoration: underline;
                 }
-
-                @media (min-width: map-get($breakpoints, md)) {
-                    a {
-                        @include font-size($sm-font);
-                    }
-                }
-                @media (min-width: map-get($breakpoints, lg)) {
+                @media (min-width: map-get($breakpoints, sm)) {
                     a {
                         @include font-size($md-font);
+                    }
+                }
+                @media (min-width: map-get($breakpoints, md)) {
+                    a {
                         width: 150px;
                     }
                 }
@@ -58,26 +52,28 @@
                 }
             }
         }
+        @media (min-width: map-get($breakpoints, sm)) {
+            ul {
+                -webkit-column-count: 2;
+                -moz-column-count: 2;
+                column-count: 2;
+            }
+        }
     }
-
     .footer-copyright {
         background: rgba($copyright, 0.5);
         color: $white;
     }
-
     @media (min-width: map-get($breakpoints, md)) {
         .footer-index {
-
             .header-brand {
-                padding-left:100px;
+                padding-left: 100px;
             }
-
             ul {
-                
-                li {
-                    float: right;
-                }
+                -webkit-column-count: 3;
+                -moz-column-count: 3;
+                column-count: 3;
             }
         }
-    } 
+    }
 }

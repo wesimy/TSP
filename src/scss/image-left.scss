@@ -41,7 +41,7 @@
         margin-top: 20px;
         margin-bottom: 0px;
     }
-    p {
+    p, ul {
         @include font-size($md-font);
         text-transform: uppercase;
     }

@@ -10,7 +10,17 @@
         width: 100%;
         background-size: cover;
         background-repeat: no-repeat;
-        padding-top: 37.8%/* (img-height / img-width * width) */
+        padding-top: 37.8%; /* (img-height / img-width * width) */
         /* (853 / 1280 * 100) */
+        
+        &:before {
+            content: '';
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            @include linear-gradient(to top, rgba($black, 0.5) 0%, transparent 60%);
+        }
     }
 }
