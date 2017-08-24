@@ -1,6 +1,6 @@
 @import 'base/index';
 .section-about-intro {
-    margin-top: -50px;
+    margin-top: -40px;
 
     h1 {
         color: $white;
@@ -12,10 +12,13 @@
         @include font-size($md-font);
         z-index: 4;
     }
+    @media (min-width: map-get($breakpoints, xs)) {
+        margin-top: -60px;
+    }
     @media (min-width: map-get($breakpoints, sm)) {
-        margin-top: -100px;
+        margin-top: -80px;
     }
     @media (min-width: map-get($breakpoints, md)) {
-        margin-top: -130px;
+        margin-top: -100px;
     }
 }
