@@ -10,7 +10,7 @@
 
         .intro-background {
             margin-top: -150px;
-            background: url(../../dist/img/home/marhaba.png) top right no-repeat;
+            background: url(../../assets/img/home/marhaba.png) top right no-repeat;
             height: 480px;
 
             @media (min-width: map-get($breakpoints, lg)) {

@@ -19752,13 +19752,13 @@ var app = (function () {
                 }, 'xml');
 
             });
-
+ 
         },
         //-----------------------------------------------------------------
         // Helper Function: Create a scroll to top 
         //-----------------------------------------------------------------
         _scrollToTopHandler = function () {
-            var scrollBtn = $('<a href="#" class="scroll-top"><i class="icon-upload"></i></a>');
+            var scrollBtn = $('<a href="#" class="scroll-top"><i class="icon-chevron-thin-up"></i></a>'); 
             $(window).scroll(function () {
                 if ($(this).scrollTop() > 100) {
                     scrollBtn.addClass('scroll-on');

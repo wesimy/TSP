@@ -43,7 +43,7 @@ for (let c of configs) {
         watch: true,
         entry: c.entry,
         output: {
-            path: path.resolve(__dirname, 'dist/'),
+            path: path.resolve(__dirname, 'assets/'),
             //pathinfo: true,
             filename: "js/app.[name].js"
         },
