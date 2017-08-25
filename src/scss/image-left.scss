@@ -43,7 +43,7 @@
     }
     p, ul {
         @include font-size($md-font);
-        text-transform: uppercase;
+        //text-transform: uppercase;
     }
 
     @media (min-width: map-get($breakpoints, md)) {

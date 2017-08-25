@@ -10382,8 +10382,7 @@ button.swiper-pagination-bullet {
       .section-image-left h3 {
         font-size: 21px; } }
   .section-image-left p, .section-image-left ul {
-    font-size: 14px;
-    text-transform: uppercase; }
+    font-size: 14px; }
     @media screen and (min-width: 0) {
       .section-image-left p, .section-image-left ul {
         font-size: 14px; } }
@@ -10466,8 +10465,7 @@ button.swiper-pagination-bullet {
       .section-image-right h3 {
         font-size: 21px; } }
   .section-image-right p, .section-image-right ul {
-    font-size: 14px;
-    text-transform: uppercase; }
+    font-size: 14px; }
     @media screen and (min-width: 0) {
       .section-image-right p, .section-image-right ul {
         font-size: 14px; } }
@@ -10926,9 +10924,11 @@ a.scroll-top {
       .pg-cover .swiper-arrows .swiper-button-prev:before {
         content: "\E901"; }
   @media (min-width: 576px) {
-    .pg-cover .swiper-container .swiper-wrapper .swiper-slide .slide-content > .container:before {
-      top: 30px;
-      left: 15px; } }
+    .pg-cover {
+      max-height: 700px; }
+      .pg-cover .swiper-container .swiper-wrapper .swiper-slide .slide-content > .container:before {
+        top: 30px;
+        left: 15px; } }
   @media (min-width: 768px) {
     .pg-cover .swiper-arrows {
       height: 80px;

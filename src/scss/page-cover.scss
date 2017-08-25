@@ -137,6 +137,7 @@
         }
     }
     @media (min-width: map-get($breakpoints, sm)) {
+        max-height: 700px;
         .swiper-container {
         
         .swiper-wrapper {
