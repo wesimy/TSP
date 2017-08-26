@@ -118,7 +118,7 @@
             &:before {
                 @include ifont;
                 display: block;
-                color: $primary;
+                color: $white;
                 border: auto;
             }
         }

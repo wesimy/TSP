@@ -2,7 +2,7 @@
 .pg-media {
     background: $white;
     position: relative;
-    margin-top:60px;
+    //padding-top:60px;
 
     .img-wrapper {
         position: relative;
@@ -10,8 +10,9 @@
         width: 100%;
         background-size: cover;
         background-repeat: no-repeat;
-        padding-top: 37.8%; /* (img-height / img-width * width) */
-        /* (853 / 1280 * 100) */
+        background-position: center;
+        padding-top: 37.8%; 
+        min-height: 300px;
         
         &:before {
             content: '';
