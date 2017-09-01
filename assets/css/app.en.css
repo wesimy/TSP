@@ -10649,35 +10649,32 @@ a.scroll-top {
       padding-top: 100px;
       padding-bottom: 80px;
       padding-right: 80px; } }
-.section-our-services h2 {
+.section-our-services-v1 h2 {
   font-weight: 200;
   text-transform: uppercase;
   padding-top: 50px;
   padding-bottom: 20px; }
 
-.section-our-services .services {
+.section-our-services-v1 .services {
   text-transform: uppercase;
   font-size: 20px; }
   @media screen and (min-width: 0) {
-    .section-our-services .services {
+    .section-our-services-v1 .services {
       font-size: 20px; } }
   @media screen and (min-width: 768px) {
-    .section-our-services .services {
+    .section-our-services-v1 .services {
       font-size: 24px; } }
   @media screen and (min-width: 992px) {
-    .section-our-services .services {
+    .section-our-services-v1 .services {
       font-size: 24px; } }
-  .section-our-services .services .service-wrapp {
+  .section-our-services-v1 .services .service-wrapp {
     height: 320px;
     color: #333333;
     position: relative;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;
-    -webkit-filter: grayscale(1);
-    /* Old WebKit */
-    filter: grayscale(1); }
-    .section-our-services .services .service-wrapp:after {
+    background-size: cover; }
+    .section-our-services-v1 .services .service-wrapp:after {
       content: "";
       -moz-transition: all 300ms ease;
       -o-transition: all 300ms ease;
@@ -10691,7 +10688,7 @@ a.scroll-top {
       left: 0;
       bottom: 0;
       right: 0; }
-    .section-our-services .services .service-wrapp::before {
+    .section-our-services-v1 .services .service-wrapp::before {
       content: "";
       -moz-transition: all 300ms ease;
       -o-transition: all 300ms ease;
@@ -10706,14 +10703,14 @@ a.scroll-top {
       bottom: 0;
       right: 0;
       opacity: 0; }
-    .section-our-services .services .service-wrapp .service-text {
+    .section-our-services-v1 .services .service-wrapp .service-text {
       position: absolute;
       top: 0;
       bottom: 0;
       left: 0;
       right: 0;
       z-index: 1; }
-      .section-our-services .services .service-wrapp .service-text::before {
+      .section-our-services-v1 .services .service-wrapp .service-text::before {
         opacity: 0;
         -moz-transition: all 300ms ease-in-out;
         -o-transition: all 300ms ease-in-out;
@@ -10727,7 +10724,7 @@ a.scroll-top {
         height: 30px;
         border-top: 1px solid #fff;
         border-left: 1px solid #fff; }
-      .section-our-services .services .service-wrapp .service-text::after {
+      .section-our-services-v1 .services .service-wrapp .service-text::after {
         opacity: 0;
         -moz-transition: all 300ms ease-in-out;
         -o-transition: all 300ms ease-in-out;
@@ -10741,32 +10738,148 @@ a.scroll-top {
         height: 30px;
         border-bottom: 1px solid #fff;
         border-right: 1px solid #fff; }
-    .section-our-services .services .service-wrapp:hover {
+    .section-our-services-v1 .services .service-wrapp:hover {
       color: #fff;
       -webkit-filter: none;
       filter: none;
       opacity: 1; }
-      .section-our-services .services .service-wrapp:hover:after {
+      .section-our-services-v1 .services .service-wrapp:hover:after {
         display: none; }
-      .section-our-services .services .service-wrapp:hover::before {
+      .section-our-services-v1 .services .service-wrapp:hover::before {
         opacity: 1; }
-      .section-our-services .services .service-wrapp:hover .service-text::before {
+      .section-our-services-v1 .services .service-wrapp:hover .service-text::before {
         opacity: 1;
         top: 30px;
         left: 30px; }
-      .section-our-services .services .service-wrapp:hover .service-text::after {
+      .section-our-services-v1 .services .service-wrapp:hover .service-text::after {
         opacity: 1;
         bottom: 30px;
         right: 30px; }
   @media (min-width: 768px) {
-    .section-our-services .services .service-wrapp {
+    .section-our-services-v1 .services .service-wrapp {
       height: 240px; } }
   @media (min-width: 992px) {
-    .section-our-services .services .service-wrapp {
+    .section-our-services-v1 .services .service-wrapp {
       height: 320px; } }
   @media (min-width: 1200px) {
-    .section-our-services .services .service-wrapp {
+    .section-our-services-v1 .services .service-wrapp {
       height: 380px; } }
+.section-our-services-v2 h2 {
+  font-weight: 200;
+  text-transform: uppercase;
+  padding-top: 50px;
+  padding-bottom: 20px; }
+
+.section-our-services-v2 .services {
+  text-transform: uppercase;
+  font-size: 20px; }
+  @media screen and (min-width: 0) {
+    .section-our-services-v2 .services {
+      font-size: 20px; } }
+  @media screen and (min-width: 768px) {
+    .section-our-services-v2 .services {
+      font-size: 24px; } }
+  @media screen and (min-width: 992px) {
+    .section-our-services-v2 .services {
+      font-size: 24px; } }
+  .section-our-services-v2 .services .service-wrapp {
+    height: 320px;
+    color: #fff;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center 30%;
+    background-size: cover; }
+    .section-our-services-v2 .services .service-wrapp:after {
+      content: "";
+      -moz-transition: all 300ms ease;
+      -o-transition: all 300ms ease;
+      -webkit-transition: all 300ms ease;
+      transition: all 300ms ease;
+      background: rgba(22, 39, 50, 0.4);
+      background: -webkit-linear-gradient(top left, rgba(22, 39, 50, 0.4) 10%, rgba(22, 39, 50, 0.2) 50%);
+      background: linear-gradient(to bottom right, rgba(22, 39, 50, 0.4) 10%, rgba(22, 39, 50, 0.2) 50%);
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      opacity: 1; }
+    .section-our-services-v2 .services .service-wrapp::before {
+      content: "";
+      -moz-transition: all 300ms ease;
+      -o-transition: all 300ms ease;
+      -webkit-transition: all 300ms ease;
+      transition: all 300ms ease;
+      background: rgba(255, 255, 255, 0.8);
+      background: -webkit-linear-gradient(top left, rgba(255, 255, 255, 0.8) 10%, rgba(255, 255, 255, 0.6) 50%);
+      background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.8) 10%, rgba(255, 255, 255, 0.6) 50%);
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      opacity: 0; }
+    .section-our-services-v2 .services .service-wrapp .service-text {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 1; }
+      .section-our-services-v2 .services .service-wrapp .service-text::before {
+        opacity: 0;
+        -moz-transition: all 300ms ease-in-out;
+        -o-transition: all 300ms ease-in-out;
+        -webkit-transition: all 300ms ease-in-out;
+        transition: all 300ms ease-in-out;
+        content: '';
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 30px;
+        height: 30px;
+        border-top: 1px solid #333333;
+        border-left: 1px solid #333333; }
+      .section-our-services-v2 .services .service-wrapp .service-text::after {
+        opacity: 0;
+        -moz-transition: all 300ms ease-in-out;
+        -o-transition: all 300ms ease-in-out;
+        -webkit-transition: all 300ms ease-in-out;
+        transition: all 300ms ease-in-out;
+        content: '';
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        width: 30px;
+        height: 30px;
+        border-bottom: 1px solid #333333;
+        border-right: 1px solid #333333; }
+    .section-our-services-v2 .services .service-wrapp:hover {
+      color: #333333;
+      -webkit-filter: none;
+      filter: none;
+      opacity: 1; }
+      .section-our-services-v2 .services .service-wrapp:hover:after {
+        display: none; }
+      .section-our-services-v2 .services .service-wrapp:hover::before {
+        opacity: 1; }
+      .section-our-services-v2 .services .service-wrapp:hover .service-text::before {
+        opacity: 1;
+        top: 30px;
+        left: 30px; }
+      .section-our-services-v2 .services .service-wrapp:hover .service-text::after {
+        opacity: 1;
+        bottom: 30px;
+        right: 30px; }
+  @media (min-width: 768px) {
+    .section-our-services-v2 .services .service-wrapp {
+      height: 180px; } }
+  @media (min-width: 992px) {
+    .section-our-services-v2 .services .service-wrapp {
+      height: 210px; } }
+  @media (min-width: 1200px) {
+    .section-our-services-v2 .services .service-wrapp {
+      height: 260px; } }
 .pg-cover {
   background: #fff;
   position: relative;

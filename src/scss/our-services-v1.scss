@@ -1,0 +1,131 @@
+@import 'base/index';
+.section-our-services-v1 {
+    h2 {
+        font-weight: 200;
+        text-transform: uppercase;
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    .services {
+        text-transform: uppercase;
+        @include font-size($xxl-font);
+
+        .service-wrapp {
+            height: 320px;
+            color: $black;
+            position: relative;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size:cover;
+            // -webkit-filter: grayscale(1); /* Old WebKit */
+            // filter: grayscale(1);
+
+            &:after {
+                content: "";
+                @include transition(all 300ms ease);
+                @include linear-gradient(to bottom right, rgba($white, 0.8) 10%,rgba($white, 0.6) 50%);
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                //z-index: -1;
+            }
+            &::before{
+                content: "";
+                @include transition(all 300ms ease);
+                @include linear-gradient(to bottom right, rgba($black, 0.4) 10%,rgba($black, 0.2) 50%);
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                opacity: 0;
+                
+            }
+
+            .service-text {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                z-index: 1;
+                &::before{
+                    opacity: 0;
+                    @include transition(all 300ms ease-in-out);
+                    content: '';
+                    position: absolute;
+                    left: 0px;
+                    top: 0px;
+                    width: 30px;
+                    height: 30px;
+                    border-top: 1px solid $white;
+                    border-left: 1px solid $white;
+                }
+                &::after{
+                    opacity: 0;
+                    @include transition(all 300ms ease-in-out);
+                    content: '';
+                    position: absolute;
+                    right: 0px;
+                    bottom: 0px;
+                    width: 30px;
+                    height: 30px;
+                    border-bottom: 1px solid $white;
+                    border-right: 1px solid $white;
+                }
+
+
+            }
+
+            &:hover {
+                color: $white;
+                -webkit-filter: none; 
+                filter:none;
+                opacity: 1;
+    
+                &:after {
+                   display: none;
+                }
+                &::before{
+                    opacity: 1;
+                }
+
+                .service-text {
+                    &::before{
+                        opacity: 1;
+                        top: 30px;
+                        left: 30px;
+                    }
+                    &::after{
+                        opacity: 1;
+                        bottom: 30px;
+                        right: 30px;
+                    }
+                }
+            }
+        }
+        
+
+
+        @media (min-width: map-get($breakpoints, md)) {
+            .service-wrapp {
+                height: 240px;
+               
+            }
+        }
+        @media (min-width: map-get($breakpoints, lg)) {
+            .service-wrapp {
+                height: 320px;
+             
+            }
+        }
+        @media (min-width: map-get($breakpoints, xl)) {
+            .service-wrapp {
+                height: 380px;
+               
+            }
+        }
+    } 
+}
