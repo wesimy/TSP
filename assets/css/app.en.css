@@ -9895,8 +9895,7 @@ button.swiper-pagination-bullet {
   margin-top: -40px; }
   .section-about-intro h1 {
     color: #fff;
-    font-size: 34px;
-    font-weight: 200; }
+    font-size: 34px; }
     @media screen and (min-width: 0) {
       .section-about-intro h1 {
         font-size: 34px; } }
@@ -10334,7 +10333,6 @@ button.swiper-pagination-bullet {
 .section-image-left {
   height: 100%; }
   .section-image-left .img-wrapp {
-    padding-top: 40px;
     padding-left: 20px; }
     .section-image-left .img-wrapp img {
       width: 200px;
@@ -10348,13 +10346,13 @@ button.swiper-pagination-bullet {
       content: "";
       background: #f3f3f3;
       height: 270px;
-      top: 90px;
+      top: 50px;
       left: 0px; }
     .section-image-left .img-wrapp:after {
       content: "";
       background: #f3f3f3;
       height: 230px;
-      top: 70px;
+      top: 20px;
       left: 40px; }
   .section-image-left h2 {
     font-size: 34px;
@@ -10393,12 +10391,10 @@ button.swiper-pagination-bullet {
       .section-image-left p, .section-image-left ul {
         font-size: 16px; } }
   @media (min-width: 768px) {
-    .section-image-left .img-wrapp {
-      padding-top: 80px; }
-      .section-image-left .img-wrapp:before {
-        top: 130px; }
-      .section-image-left .img-wrapp:after {
-        top: 100px; } }
+    .section-image-left .img-wrapp:before {
+      top: 50px; }
+    .section-image-left .img-wrapp:after {
+      top: 20px; } }
   @media (min-width: 992px) {
     .section-image-left .img-wrapp {
       padding-left: 30px; }
@@ -10408,15 +10404,14 @@ button.swiper-pagination-bullet {
         width: 300px; }
       .section-image-left .img-wrapp:before {
         height: 410px;
-        top: 170px; }
+        top: 90px; }
       .section-image-left .img-wrapp:after {
         height: 350px;
-        top: 120px;
+        top: 40px;
         left: 75px; } }
 .section-image-right {
   height: 100%; }
   .section-image-right .img-wrapp {
-    padding-top: 40px;
     padding-right: 20px;
     text-align: right; }
     .section-image-right .img-wrapp img {
@@ -10431,13 +10426,13 @@ button.swiper-pagination-bullet {
       content: "";
       background: #f3f3f3;
       height: 270px;
-      top: 90px;
+      top: 50px;
       right: 0px; }
     .section-image-right .img-wrapp:after {
       content: "";
       background: #f3f3f3;
       height: 230px;
-      top: 70px;
+      top: 30px;
       right: 40px; }
   .section-image-right h2 {
     font-size: 34px;
@@ -10476,12 +10471,10 @@ button.swiper-pagination-bullet {
       .section-image-right p, .section-image-right ul {
         font-size: 16px; } }
   @media (min-width: 768px) {
-    .section-image-right .img-wrapp {
-      padding-top: 80px; }
-      .section-image-right .img-wrapp:before {
-        top: 130px; }
-      .section-image-right .img-wrapp:after {
-        top: 100px; } }
+    .section-image-right .img-wrapp:before {
+      top: 50px; }
+    .section-image-right .img-wrapp:after {
+      top: 20px; } }
   @media (min-width: 992px) {
     .section-image-right .img-wrapp {
       padding-right: 30px; }
@@ -10491,10 +10484,10 @@ button.swiper-pagination-bullet {
         width: 300px; }
       .section-image-right .img-wrapp:before {
         height: 410px;
-        top: 170px; }
+        top: 90px; }
       .section-image-right .img-wrapp:after {
         height: 350px;
-        top: 120px;
+        top: 40px;
         right: 75px; } }
 html,
 body {
@@ -10659,8 +10652,8 @@ a.scroll-top {
 .section-our-services h2 {
   font-weight: 200;
   text-transform: uppercase;
-  padding-top: 100px;
-  padding-bottom: 100px; }
+  padding-top: 50px;
+  padding-bottom: 20px; }
 
 .section-our-services .services {
   text-transform: uppercase;
@@ -10942,8 +10935,8 @@ a.scroll-top {
   width: 100%;
   padding: 15px; }
   .pg-footer .footer-index {
-    padding-top: 80px;
-    padding-bottom: 80px; }
+    padding-top: 20px;
+    padding-bottom: 20px; }
     .pg-footer .footer-index .header-brand {
       padding-left: 40px; }
       .pg-footer .footer-index .header-brand img {
@@ -11004,12 +10997,15 @@ a.scroll-top {
     background: rgba(44, 78, 100, 0.5);
     color: #fff; }
   @media (min-width: 768px) {
-    .pg-footer .footer-index .header-brand {
-      padding-left: 100px; }
-    .pg-footer .footer-index ul {
-      -webkit-column-count: 3;
-      -moz-column-count: 3;
-      column-count: 3; } }
+    .pg-footer .footer-index {
+      padding-top: 30px;
+      padding-bottom: 30px; }
+      .pg-footer .footer-index .header-brand {
+        padding-left: 100px; }
+      .pg-footer .footer-index ul {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3; } }
 .pg-header {
   position: fixed;
   top: 0px;
@@ -11063,29 +11059,28 @@ a.scroll-top {
         width: 120px; } }
 .pg-media {
   background: #fff;
-  position: relative; }
-  .pg-media .img-wrapper {
-    position: relative;
-    height: 0px;
+  position: relative;
+  height: 75%; }
+  .pg-media .media-img {
+    position: absolute;
+    height: 100%;
     width: 100%;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding-top: 37.8%;
-    min-height: 300px; }
-    .pg-media .img-wrapper:before {
-      content: '';
-      height: 100%;
-      width: 100%;
-      position: absolute;
-      top: 0px;
-      left: 0px;
-      background: rgba(51, 51, 51, 0.5);
-      background: -webkit-linear-gradient(bottom, rgba(51, 51, 51, 0.5) 0%, transparent 60%);
-      background: linear-gradient(to top, rgba(51, 51, 51, 0.5) 0%, transparent 60%); }
-  @media (min-width: 576px) {
-    .pg-media {
-      margin-top: 0px; } }
+    background-position: center center; }
+  .pg-media .media-content {
+    height: 100%; }
+    .pg-media .media-content > .container {
+      height: 100%; }
+      .pg-media .media-content > .container:before {
+        content: '';
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background: rgba(51, 51, 51, 0.5);
+        background: -webkit-linear-gradient(bottom, rgba(51, 51, 51, 0.5) 0%, transparent 100%);
+        background: linear-gradient(to top, rgba(51, 51, 51, 0.5) 0%, transparent 100%); }
 .pg-sidebar {
   -moz-transition: all 800ms cubic-bezier(0.76, 0, 0.24, 1);
   -o-transition: all 800ms cubic-bezier(0.76, 0, 0.24, 1);

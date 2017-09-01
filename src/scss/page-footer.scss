@@ -4,8 +4,8 @@
     width: 100%;
     padding: 15px;
     .footer-index {
-        padding-top: 80px;
-        padding-bottom: 80px;
+        padding-top: 20px;
+        padding-bottom: 20px;
         .header-brand {
             padding-left: 40px;
             img {
@@ -66,6 +66,8 @@
     }
     @media (min-width: map-get($breakpoints, md)) {
         .footer-index {
+            padding-top: 30px;
+            padding-bottom: 30px;
             .header-brand {
                 padding-left: 100px;
             }

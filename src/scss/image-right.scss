@@ -2,7 +2,7 @@
 .section-image-right {
     height: 100%;
     .img-wrapp {
-        padding-top: 40px;
+        //padding-top: 40px;
         padding-right:20px;
         text-align: right;
 
@@ -21,14 +21,14 @@
             content: "";
             background: $overlay;
             height: 270px;
-            top: 90px;
+            top: 50px;
             right: 0px;
         }
         &:after {
             content: "";
             background: $overlay;
             height: 230px;
-            top: 70px;
+            top: 30px;
             right: 40px;
         }
     }
@@ -49,13 +49,13 @@
 
     @media (min-width: map-get($breakpoints, md)) {
         .img-wrapp {
-            padding-top: 80px;
+            //padding-top: 80px;
 
             &:before {
-                top: 130px;
+                top: 50px;
             }
             &:after {
-                top: 100px;
+                top: 20px;
             }
         }
     }
@@ -73,11 +73,11 @@
             }
             &:before {
                 height: 410px;
-                top: 170px;
+                top: 90px;
             }
             &:after {
                 height: 350px;
-                top: 120px;
+                top: 40px;
                 right: 75px;
             }
         }
