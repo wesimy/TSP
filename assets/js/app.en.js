@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 25);
+/******/ 	return __webpack_require__(__webpack_require__.s = 26);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -3646,7 +3646,7 @@ var Popover = function ($) {
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {if(!global["window"]) global["window"] = {};
-module.exports = global["window"]["Tether"] = __webpack_require__(27);
+module.exports = global["window"]["Tether"] = __webpack_require__(28);
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
@@ -9026,7 +9026,7 @@ else if (typeof define === 'function' && define.amd) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./main.js": 26
+	"./main.js": 27
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -9057,13 +9057,13 @@ var map = {
 	"./image-right.scss": 15,
 	"./layout.scss": 16,
 	"./managing-director.scss": 17,
-	"./our-services-v1.scss": 67,
-	"./our-services-v2.scss": 75,
-	"./page-cover.scss": 19,
-	"./page-footer.scss": 20,
-	"./page-header.scss": 21,
-	"./page-media.scss": 22,
-	"./page-sidebar.scss": 23
+	"./our-services-v1.scss": 18,
+	"./our-services-v2.scss": 19,
+	"./page-cover.scss": 20,
+	"./page-footer.scss": 21,
+	"./page-header.scss": 22,
+	"./page-media.scss": 23,
+	"./page-sidebar.scss": 24
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -9085,7 +9085,7 @@ webpackContext.id = 8;
 /* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(global) {module.exports = global["jQuery"] = __webpack_require__(24);
+/* WEBPACK VAR INJECTION */(function(global) {module.exports = global["jQuery"] = __webpack_require__(25);
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
@@ -9137,7 +9137,12 @@ webpackContext.id = 8;
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 18 */,
+/* 18 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
 /* 19 */
 /***/ (function(module, exports) {
 
@@ -9169,6 +9174,12 @@ webpackContext.id = 8;
 
 /***/ }),
 /* 24 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -19428,7 +19439,7 @@ return jQuery;
 
 
 /***/ }),
-/* 25 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /////////////////////////
@@ -19472,7 +19483,7 @@ requireJS.keys().forEach(requireJS);
 
 
 /***/ }),
-/* 26 */
+/* 27 */
 /***/ (function(module, exports) {
 
 ////
@@ -19795,7 +19806,7 @@ var app = (function () {
  });
 
 /***/ }),
-/* 27 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*! tether 1.4.0 */
@@ -21614,64 +21625,6 @@ return Tether;
 
 }));
 
-
-/***/ }),
-/* 28 */,
-/* 29 */,
-/* 30 */,
-/* 31 */,
-/* 32 */,
-/* 33 */,
-/* 34 */,
-/* 35 */,
-/* 36 */,
-/* 37 */,
-/* 38 */,
-/* 39 */,
-/* 40 */,
-/* 41 */,
-/* 42 */,
-/* 43 */,
-/* 44 */,
-/* 45 */,
-/* 46 */,
-/* 47 */,
-/* 48 */,
-/* 49 */,
-/* 50 */,
-/* 51 */,
-/* 52 */,
-/* 53 */,
-/* 54 */,
-/* 55 */,
-/* 56 */,
-/* 57 */,
-/* 58 */,
-/* 59 */,
-/* 60 */,
-/* 61 */,
-/* 62 */,
-/* 63 */,
-/* 64 */,
-/* 65 */,
-/* 66 */,
-/* 67 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 68 */,
-/* 69 */,
-/* 70 */,
-/* 71 */,
-/* 72 */,
-/* 73 */,
-/* 74 */,
-/* 75 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);

@@ -63,6 +63,13 @@
     .footer-copyright {
         background: rgba($copyright, 0.5);
         color: $white;
+        a {
+            color: $white;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
     @media (min-width: map-get($breakpoints, md)) {
         .footer-index {

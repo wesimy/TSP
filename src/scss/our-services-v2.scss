@@ -17,8 +17,8 @@
             background-repeat: no-repeat;
             background-position: center 30%;
             background-size:cover;
-            // -webkit-filter: grayscale(1); /* Old WebKit */
-            // filter: grayscale(1);
+            -webkit-filter: grayscale(0.3); /* Old WebKit */
+            filter: grayscale(0.3);
 
             &:after {
                 content: "";

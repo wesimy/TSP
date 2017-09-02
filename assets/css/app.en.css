@@ -9918,6 +9918,21 @@ button.swiper-pagination-bullet {
     @media screen and (min-width: 992px) {
       .section-about-intro .intro-container {
         font-size: 16px; } }
+    .section-about-intro .intro-container a {
+      color: #333333; }
+      .section-about-intro .intro-container a:hover {
+        text-decoration: underline; }
+    .section-about-intro .intro-container .page {
+      font-size: 15px; }
+      @media screen and (min-width: 0) {
+        .section-about-intro .intro-container .page {
+          font-size: 15px; } }
+      @media screen and (min-width: 768px) {
+        .section-about-intro .intro-container .page {
+          font-size: 18px; } }
+      @media screen and (min-width: 992px) {
+        .section-about-intro .intro-container .page {
+          font-size: 18px; } }
   @media (min-width: 0) {
     .section-about-intro {
       margin-top: -60px; } }
@@ -10304,7 +10319,17 @@ button.swiper-pagination-bullet {
   content: "\E062"; }
 .section-home-intro .intro-container {
   background: #fafafa;
+  font-size: 14px;
   z-index: 4; }
+  @media screen and (min-width: 0) {
+    .section-home-intro .intro-container {
+      font-size: 14px; } }
+  @media screen and (min-width: 768px) {
+    .section-home-intro .intro-container {
+      font-size: 16px; } }
+  @media screen and (min-width: 992px) {
+    .section-home-intro .intro-container {
+      font-size: 16px; } }
   .section-home-intro .intro-container .intro-paragraph-one {
     font-size: 20px; }
     @media screen and (min-width: 0) {
@@ -10788,7 +10813,10 @@ a.scroll-top {
     position: relative;
     background-repeat: no-repeat;
     background-position: center 30%;
-    background-size: cover; }
+    background-size: cover;
+    -webkit-filter: grayscale(0.3);
+    /* Old WebKit */
+    filter: grayscale(0.3); }
     .section-our-services-v2 .services .service-wrapp:after {
       content: "";
       -moz-transition: all 300ms ease;
@@ -11109,6 +11137,10 @@ a.scroll-top {
   .pg-footer .footer-copyright {
     background: rgba(44, 78, 100, 0.5);
     color: #fff; }
+    .pg-footer .footer-copyright a {
+      color: #fff; }
+      .pg-footer .footer-copyright a:hover {
+        text-decoration: underline; }
   @media (min-width: 768px) {
     .pg-footer .footer-index {
       padding-top: 30px;

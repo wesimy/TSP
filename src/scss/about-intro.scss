@@ -10,6 +10,18 @@
         background: $silver;
         @include font-size($md-font);
         z-index: 4;
+
+        a {
+            color: $black;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .page {
+            @include font-size($lg-font);
+        }
     }
     @media (min-width: map-get($breakpoints, xs)) {
         margin-top: -60px;
