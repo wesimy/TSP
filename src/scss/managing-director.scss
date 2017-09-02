@@ -5,14 +5,14 @@
         background: $silver;
 
         .img-wrapp {
-            // padding-top: 50px;
-            // padding-right: 70px;
-            max-width: 350px;
-            text-align: center;
+            padding-top: 40px;
+            padding-right: 60px;
+            //max-width: 350px;
+            text-align: right;
             margin: 0 auto;
             img {
                 position: relative;
-                //width: 200px;
+                width: 200px;
                 z-index:4;
                 max-width: 100%;
             }
@@ -26,13 +26,13 @@
             &:before {
                 content: "";
                 background: rgba($primary, 0.05);
-                top: 35px;
-                right: 100px;
+                top: 25px;
+                right: 110px;
             }
             &:after {
                 content: "";
-                background: rgba($primary, 0.01);
-                top: 115px;
+                background: rgba($primary, 0.02);
+                top: 160px;
                 right: 55px;
             }
         }
@@ -55,42 +55,46 @@
 
         @media (min-width: map-get($breakpoints, sm)) {
             .img-wrapp {
-                padding-right: 80px;
+                padding-top: 60px;
+                padding-right: 40px;
 
                 &:before {
-                    right: 120px;
+                    top: 40px;
+                    right: 90px;
                 }
                 &:after {
-                    right: 65px;
+                    top: 180px;
+                    right: 35px;
                 }
+
             }
         }
 
         @media (min-width: map-get($breakpoints, md)) {
             .img-wrapp {
-                padding-top: 100px;
-                padding-right: 80px;
+                padding-top: 80px;
+                //padding-right: 40px;
 
                 img {
-                    width: auto;
+                    width: 280px;
                 }
                 &:before, &:after {
                     width: 200px;
                     height: 200px;
                 }
                 &:before {
-                    top: 80px;
-                    right: 170px;
+                    top: 60px;
+                    right: 110px;
                 }
                 &:after {
-                    top: 220px;
-                    right: 58px;
+                    top: 255px;
+                    right: 30px;
                 }
 
             }
             .container-text {
-                padding-top: 100px;
-                padding-bottom: 80px;
+                padding-top: 80px;
+                padding-bottom: 60px;
                 padding-right: 80px;
             }
         }
