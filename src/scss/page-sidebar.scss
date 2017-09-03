@@ -1,7 +1,7 @@
 @import 'base/index';
 .pg-sidebar {
     @include transition(all 800ms $cubic); //@include transition(right 900ms $cubic);
-    width: 100%;
+    width: 250px;
     position: absolute;
     left: -100%;
     z-index: 20;
@@ -10,12 +10,14 @@
     color: $white; //@include transition(all 1000ms cubic-bezier(0.68, -0.45, 0.265, 1.55));
     .container-fluid {
         height: 100%;
-        >.row{height: 100%;}
+        >.row {
+            height: 100%;
+        }
     }
     a {
         color: $white;
     }
-    a.header-menu{
+    a.header-menu {
         position: absolute;
         top: 30px;
         right: 30px;
@@ -35,12 +37,10 @@
         left: 0;
     }
     .sidebar-bd {
-        margin: 0 -15px;
-        //padding: 50px 0;
+        margin: 0 -15px; //padding: 50px 0;
         .sidebar-primary {
             //background: $primary;
             padding: 20px;
-
             ul {
                 margin: 0 auto;
                 padding: 10px 0;
@@ -52,9 +52,8 @@
                         font-weight: 200;
                         display: block;
                         padding: 5px 15px;
-                        
                         &:hover {
-                            color:$secondary;
+                            color: $secondary;
                         }
                     }
                 }
@@ -123,7 +122,7 @@
         }
     }
     @media (min-width: map-get($breakpoints, sm)) {
-        width: 500px;
+        //width: 500px;
         .sidebar-hd {
             //padding-top: 20px;
             .sidebar-search {
@@ -136,21 +135,23 @@
             //left: calc(100% - 400px);
         }
     }
-    @media (min-width: map-get($breakpoints, md)) {}
+    @media (min-width: map-get($breakpoints, md)) {
+        width: 500px;
+    }
     @media (min-width: map-get($breakpoints, lg)) {}
     @media (min-width: map-get($breakpoints, xl)) {}
     @media (min-width: map-get($breakpoints, xxl)) {}
 }
 
-.nav-on{
+.nav-on {
     overflow: hidden;
-    .nav-overlay{
-    background: rgba($black,0.5);
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 18;
-    width: 100%;
-    height: 100%;
-}
+    .nav-overlay {
+        background: rgba($black, 0.5);
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 18;
+        width: 100%;
+        height: 100%;
+    }
 }

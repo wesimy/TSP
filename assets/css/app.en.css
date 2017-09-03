@@ -11238,7 +11238,7 @@ a.scroll-top {
   -o-transition: all 800ms cubic-bezier(0.76, 0, 0.24, 1);
   -webkit-transition: all 800ms cubic-bezier(0.76, 0, 0.24, 1);
   transition: all 800ms cubic-bezier(0.76, 0, 0.24, 1);
-  width: 100%;
+  width: 250px;
   position: absolute;
   left: -100%;
   z-index: 20;
@@ -11376,7 +11376,7 @@ a.scroll-top {
               .pg-sidebar .sidebar-bd .sidebar-secondary dl dd ul li a {
                 color: #fff;
                 display: block; }
-  @media (min-width: 576px) {
+  @media (min-width: 768px) {
     .pg-sidebar {
       width: 500px; } }
 
