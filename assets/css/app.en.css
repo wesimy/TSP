@@ -10357,23 +10357,23 @@ button.swiper-pagination-bullet {
       margin-top: -100px; } }
 .section-image-left {
   height: 100%; }
-  .section-image-left .img-wrapp {
+  .section-image-left .img-wrapp, .section-image-left .img-wrapp-small {
     padding-left: 20px; }
-    .section-image-left .img-wrapp img {
+    .section-image-left .img-wrapp img, .section-image-left .img-wrapp-small img {
       max-width: 200px;
       position: relative; }
-    .section-image-left .img-wrapp:before, .section-image-left .img-wrapp:after {
+    .section-image-left .img-wrapp:before, .section-image-left .img-wrapp:after, .section-image-left .img-wrapp-small:before, .section-image-left .img-wrapp-small:after {
       display: inline-block;
       position: absolute;
       width: 200px;
       z-index: -1; }
-    .section-image-left .img-wrapp:before {
+    .section-image-left .img-wrapp:before, .section-image-left .img-wrapp-small:before {
       content: "";
       background: #E9E9E9;
       height: 270px;
       top: 50px;
       left: 0px; }
-    .section-image-left .img-wrapp:after {
+    .section-image-left .img-wrapp:after, .section-image-left .img-wrapp-small:after {
       content: "";
       background: #E9E9E9;
       height: 230px;
@@ -10436,24 +10436,24 @@ button.swiper-pagination-bullet {
         left: 75px; } }
 .section-image-right {
   height: 100%; }
-  .section-image-right .img-wrapp {
+  .section-image-right .img-wrapp, .section-image-right .img-wrapp-small {
     padding-right: 20px;
     text-align: right; }
-    .section-image-right .img-wrapp img {
+    .section-image-right .img-wrapp img, .section-image-right .img-wrapp-small img {
       max-width: 200px;
       position: relative; }
-    .section-image-right .img-wrapp:before, .section-image-right .img-wrapp:after {
+    .section-image-right .img-wrapp:before, .section-image-right .img-wrapp:after, .section-image-right .img-wrapp-small:before, .section-image-right .img-wrapp-small:after {
       display: inline-block;
       position: absolute;
       width: 200px;
       z-index: -1; }
-    .section-image-right .img-wrapp:before {
+    .section-image-right .img-wrapp:before, .section-image-right .img-wrapp-small:before {
       content: "";
       background: #E9E9E9;
       height: 270px;
       top: 50px;
       right: 0px; }
-    .section-image-right .img-wrapp:after {
+    .section-image-right .img-wrapp:after, .section-image-right .img-wrapp-small:after {
       content: "";
       background: #E9E9E9;
       height: 230px;
@@ -10903,15 +10903,44 @@ a.scroll-top {
         opacity: 1;
         bottom: 30px;
         right: 30px; }
-  @media (min-width: 768px) {
+
+@media (min-width: 768px) {
+  .section-our-services-v2 .services {
+    font-size: 15px; } }
+  @media screen and (min-width: 768px) and (min-width: 0) {
+    .section-our-services-v2 .services {
+      font-size: 15px; } }
+  @media screen and (min-width: 768px) and (min-width: 768px) {
+    .section-our-services-v2 .services {
+      font-size: 18px; } }
+  @media screen and (min-width: 768px) and (min-width: 992px) {
+    .section-our-services-v2 .services {
+      font-size: 18px; } }
+
+@media (min-width: 768px) {
     .section-our-services-v2 .services .service-wrapp {
       height: 180px; } }
-  @media (min-width: 992px) {
+
+@media (min-width: 992px) {
+  .section-our-services-v2 .services {
+    font-size: 20px; } }
+  @media screen and (min-width: 992px) and (min-width: 0) {
+    .section-our-services-v2 .services {
+      font-size: 20px; } }
+  @media screen and (min-width: 992px) and (min-width: 768px) {
+    .section-our-services-v2 .services {
+      font-size: 24px; } }
+  @media screen and (min-width: 992px) and (min-width: 992px) {
+    .section-our-services-v2 .services {
+      font-size: 24px; } }
+
+@media (min-width: 992px) {
     .section-our-services-v2 .services .service-wrapp {
       height: 210px; } }
-  @media (min-width: 1200px) {
-    .section-our-services-v2 .services .service-wrapp {
-      height: 260px; } }
+
+@media (min-width: 1200px) {
+  .section-our-services-v2 .services .service-wrapp {
+    height: 260px; } }
 .pg-cover {
   background: #fff;
   position: relative;

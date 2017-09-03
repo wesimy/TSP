@@ -106,26 +106,32 @@
                 }
             }
         }
-        
+    } 
 
-
-        @media (min-width: map-get($breakpoints, md)) {
+    @media (min-width: map-get($breakpoints, md)) {
+        .services {
+            @include font-size($lg-font);
             .service-wrapp {
                 height: 180px;
                
             }
-        }
-        @media (min-width: map-get($breakpoints, lg)) {
+        }  
+    }
+    @media (min-width: map-get($breakpoints, lg)) {
+        .services {
+            @include font-size($xxl-font);
             .service-wrapp {
                 height: 210px;
-             
+            
             }
         }
-        @media (min-width: map-get($breakpoints, xl)) {
+    }
+    @media (min-width: map-get($breakpoints, xl)) {
+        .services {
             .service-wrapp {
                 height: 260px;
-               
+            
             }
         }
-    } 
+    }
 }
