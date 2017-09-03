@@ -10929,7 +10929,7 @@ a.scroll-top {
           width: 100%;
           height: 100%;
           background-size: cover;
-          background-position: center center; }
+          background-position: center top; }
         .pg-cover .swiper-container .swiper-wrapper .swiper-slide .slide-content {
           height: 100%; }
           .pg-cover .swiper-container .swiper-wrapper .swiper-slide .slide-content > .container {
@@ -11301,6 +11301,10 @@ a.scroll-top {
             padding: 5px 15px; }
             .pg-sidebar .sidebar-bd .sidebar-primary ul li a:hover {
               color: #8dc63f; }
+      .pg-sidebar .sidebar-bd .sidebar-primary .menue-logo {
+        padding-left: 15px; }
+        .pg-sidebar .sidebar-bd .sidebar-primary .menue-logo img {
+          width: 90px; }
     .pg-sidebar .sidebar-bd .sidebar-secondary {
       margin: 0 -15px;
       padding: 20px; }
