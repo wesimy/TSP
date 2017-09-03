@@ -1,48 +1,51 @@
 @import 'base/index';
-
-.pg-header{
+.pg-header {
     position: fixed;
     top: 0px;
     z-index: 5;
     width: 100%;
     >.container {
-        >.row{
+        >.row {
             background: $primary;
-            padding:  15px;
+            padding: 15px;
         }
     }
-    .header-brand{
-        img{
-            width: 90px;
+    .header-brand {
+        img {
+            width: 120px;
             float: right;
         }
     }
-    .header-title{
-        font-family: 'Bembo','Times New Roman', Times, serif;
+    .header-title {
+        font-family: 'Bembo', 'Times New Roman', Times, serif;
         text-align: left;
-        h1{color: $secondary;
-        @include font-size($xxl-font);
-        margin: 0;
+        h1 {
+            color: $secondary;
+            @include font-size($company-font);
+            margin: 0;
+            margin-top: 5px;
         }
-        p{
+        p {
             text-align: left;
             color: $white;
             margin: 0;
-            @include font-size($lg-font);
+            margin-top: -10px;
+            margin-left: 5px;
+            @include font-size($md-font);
         }
     }
-    .header-menu{
-        color:$white;
+    .header-menu {
+        color: $white;
     }
     @media (min-width: map-get($breakpoints, sm)) {
         position: absolute;
     }
     @media (min-width: map-get($breakpoints, md)) {
         top: 30px;
-        .header-brand{
-        img{
-            width: 120px;
+        .header-brand {
+            img {
+                width: 150px;
+            }
         }
-    }
     }
 }

@@ -11164,38 +11164,41 @@ a.scroll-top {
     background: #162732;
     padding: 15px; }
   .pg-header .header-brand img {
-    width: 90px;
+    width: 120px;
     float: right; }
   .pg-header .header-title {
-    font-family: 'Bembo','Times New Roman', Times, serif;
+    font-family: 'Bembo', 'Times New Roman', Times, serif;
     text-align: left; }
     .pg-header .header-title h1 {
       color: #8dc63f;
-      font-size: 20px;
-      margin: 0; }
+      font-size: 26px;
+      margin: 0;
+      margin-top: 5px; }
       @media screen and (min-width: 0) {
         .pg-header .header-title h1 {
-          font-size: 20px; } }
+          font-size: 26px; } }
       @media screen and (min-width: 768px) {
         .pg-header .header-title h1 {
-          font-size: 24px; } }
+          font-size: 32px; } }
       @media screen and (min-width: 992px) {
         .pg-header .header-title h1 {
-          font-size: 24px; } }
+          font-size: 32px; } }
     .pg-header .header-title p {
       text-align: left;
       color: #fff;
       margin: 0;
-      font-size: 15px; }
+      margin-top: -10px;
+      margin-left: 5px;
+      font-size: 14px; }
       @media screen and (min-width: 0) {
         .pg-header .header-title p {
-          font-size: 15px; } }
+          font-size: 14px; } }
       @media screen and (min-width: 768px) {
         .pg-header .header-title p {
-          font-size: 18px; } }
+          font-size: 16px; } }
       @media screen and (min-width: 992px) {
         .pg-header .header-title p {
-          font-size: 18px; } }
+          font-size: 16px; } }
   .pg-header .header-menu {
     color: #fff; }
   @media (min-width: 576px) {
@@ -11205,7 +11208,7 @@ a.scroll-top {
     .pg-header {
       top: 30px; }
       .pg-header .header-brand img {
-        width: 120px; } }
+        width: 150px; } }
 .pg-media {
   background: #fff;
   position: relative;
