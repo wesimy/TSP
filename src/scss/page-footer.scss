@@ -10,6 +10,7 @@
             padding-left: 40px;
             img {
                 width: 120px;
+                height: 60px;
             }
         }
         ul {
@@ -31,9 +32,9 @@
                     width: 100px;
                     @include font-size($xs-font);
                     font-weight: 200;
-                }
-                a:hover {
-                    text-decoration: underline;
+                    &:hover {
+                        color: $secondary;
+                    }
                 }
                 @media (min-width: map-get($breakpoints, sm)) {
                     a {
