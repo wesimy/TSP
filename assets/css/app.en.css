@@ -11090,7 +11090,7 @@ a.scroll-top {
         content: "\E901"; }
   @media (min-width: 576px) {
     .pg-cover {
-      max-height: 700px; }
+      min-height: 60vw; }
       .pg-cover .swiper-container .swiper-wrapper .swiper-slide .slide-content > .container:before {
         top: 30px;
         left: 15px; } }
@@ -11243,7 +11243,7 @@ a.scroll-top {
 .pg-media {
   background: #fff;
   position: relative;
-  height: 75%; }
+  height: 85%; }
   .pg-media .media-img {
     position: absolute;
     height: 100%;
