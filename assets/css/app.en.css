@@ -10796,7 +10796,7 @@ a.scroll-top {
 .section-our-services-v2 h2 {
   font-weight: 200;
   text-transform: uppercase;
-  padding-top: 50px;
+  padding-top: 30px;
   padding-bottom: 20px; }
 
 .section-our-services-v2 .services {
@@ -11232,12 +11232,9 @@ a.scroll-top {
           font-size: 16px; } }
   .pg-header .header-menu {
     color: #fff; }
-  @media (min-width: 576px) {
-    .pg-header {
-      position: absolute; } }
   @media (min-width: 768px) {
     .pg-header {
-      top: 30px; }
+      top: 50px; }
       .pg-header .header-brand img {
         width: 150px; } }
 .pg-media {
@@ -11335,8 +11332,7 @@ a.scroll-top {
       .pg-sidebar .sidebar-bd .sidebar-primary .menue-brand {
         padding-left: 15px; }
         .pg-sidebar .sidebar-bd .sidebar-primary .menue-brand img {
-          width: 90px;
-          height: 60px; }
+          width: 140px; }
     .pg-sidebar .sidebar-bd .sidebar-secondary {
       margin: 0 -15px;
       padding: 20px; }
@@ -11410,7 +11406,7 @@ a.scroll-top {
                 display: block; }
   @media (min-width: 768px) {
     .pg-sidebar {
-      width: 500px; } }
+      width: 340px; } }
 
 .nav-on {
   overflow: hidden; }

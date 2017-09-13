@@ -39,10 +39,10 @@
         color: $white;
     }
     @media (min-width: map-get($breakpoints, sm)) {
-        position: absolute;
+        //position: absolute;
     }
     @media (min-width: map-get($breakpoints, md)) {
-        top: 30px;
+        top: 50px;
         .header-brand {
             img {
                 width: 150px;

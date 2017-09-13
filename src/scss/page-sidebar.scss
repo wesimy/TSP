@@ -62,8 +62,8 @@
                 //text-align: right;
                 padding-left: 15px;
                 img {
-                    width: 90px;
-                    height: 60px;
+                    width: 140px;
+                    //height: 60px;
                 }
             }
         }
@@ -137,7 +137,7 @@
         }
     }
     @media (min-width: map-get($breakpoints, md)) {
-        width: 500px;
+        width: 340px;
     }
     @media (min-width: map-get($breakpoints, lg)) {}
     @media (min-width: map-get($breakpoints, xl)) {}
