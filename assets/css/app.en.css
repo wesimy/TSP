@@ -11092,7 +11092,7 @@ a.scroll-top {
     .pg-cover {
       min-height: 60vw; }
       .pg-cover .swiper-container .swiper-wrapper .swiper-slide .slide-content > .container:before {
-        top: 30px;
+        top: 50px;
         left: 15px; } }
   @media (min-width: 768px) {
     .pg-cover .swiper-arrows {
