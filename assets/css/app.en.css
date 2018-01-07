@@ -11089,11 +11089,9 @@ a.scroll-top {
       .pg-cover .swiper-arrows .swiper-button-prev:before {
         content: "\E901"; }
   @media (min-width: 576px) {
-    .pg-cover {
-      min-height: 50vw; }
-      .pg-cover .swiper-container .swiper-wrapper .swiper-slide .slide-content > .container:before {
-        top: 50px;
-        left: 15px; } }
+    .pg-cover .swiper-container .swiper-wrapper .swiper-slide .slide-content > .container:before {
+      top: 50px;
+      left: 15px; } }
   @media (min-width: 768px) {
     .pg-cover .swiper-arrows {
       height: 80px;
